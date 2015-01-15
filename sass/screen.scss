@@ -1,0 +1,270 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+// fonts
+@import "compass/css3/font-face";
+@include font-face("Circular", font-files("https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.woff", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.ttf", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.svg"), "https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.eot");
+
+// variables and sass stuff
+$link-color: #3F4999;
+$hover-color: #27333E;
+$transition: 0.3s ease all; 
+$dark: rgb(25,30,36);
+$light: rgb(229,234,238);
+
+$break-med: 1000px;
+$break-sm: 750px;
+
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+@mixin selection($color, $background) {
+  ::selection {color: $color;background: $background;}
+  ::-moz-selection {color: $color;background: $background;}
+}
+
+
+//  basics
+@include selection($light,$dark);
+
+body, html {
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100% !important;
+  background: #FFF;
+}
+
+div, a, p.button, img, li {@include vendorize(transition, $transition);}
+img {max-width: 100%;}
+
+a, i {
+  color: $dark;
+  text-decoration: none;
+  &:hover {
+    color:  $dark;
+  }
+}
+
+
+// spacing & grid
+
+body {
+  background: #FFF;
+}
+
+// max-width is 2000px
+#wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+// forces heights 
+section {
+	width: 100%;
+  height: 800px;
+  padding: 0; 
+	// padding: 55vh 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+//  panel paragraphs & nav on left
+$copy-left-spacing: 20px;
+$text-vert-spacing: 2%;
+
+.panel, nav {
+	position: fixed; 
+	height: 100%; 
+	width: 100%;
+  max-width: 2000px;
+  .container {
+    position: absolute;
+    width: 100%;
+    .copy {
+      display: block;
+      h1 {
+        max-width: 60% !important;
+      }
+      h1, p {
+        max-width: 40%;
+        display: block;
+        margin: 15px 0 0 $copy-left-spacing;
+        &:first-child {
+          margin-top: $text-vert-spacing;
+        }
+        i {
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+} 
+
+// put nav on bottom
+nav {
+  top: $text-vert-spacing;
+  text-align: right;
+  height: 50px;
+  .container { 
+    padding-top: 20px;
+  }
+  a {
+    padding: $copy-left-spacing;
+  }
+}
+
+
+.info,  {
+  position: fixed;
+  padding: 5%;
+
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    @media screen and (max-width: $break-sm) {
+      width: 75%;
+    }
+    h1 {
+      margin-top: 5%;
+    }   
+  } 
+  footer {
+    margin: 5% 0;
+  }
+
+}
+
+
+//extra space bt panels for skrollr
+.separator {
+  height: 300px;
+}
+
+
+
+
+// typography
+
+body {
+  font-size: 16px;
+  color: $dark;
+  font-family: 'circular', helvetica, arial, sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  h1 {
+		font-size: 3em;
+    i {
+      font-size: .8em;
+    }
+  }
+}
+
+nav {
+  a {
+    color: $dark;
+    text-transform: uppercase;
+  }
+}
+
+.panel p {
+  font-size: 2em;
+  i {
+    font-size: 0.8em;
+  }
+}
+
+.info {
+  text-align: left;
+  font-size: .8em;
+}
+
+footer {
+  font-size: 80%;
+}
+
+
+
+// BACKGROUNDZ & STACKING
+
+nav {
+  z-index: 102;
+}
+
+.dark, .dark a  {
+  background: $dark;
+  color: $light;
+}
+
+.light {
+  background: $light;
+  color: $dark;
+}
+
+
+.a {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg); 
+  z-index: 100;
+}
+
+.b1 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); 
+  z-index: 99;
+}
+
+.b2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); 
+  z-index: 98;
+}
+
+.b3 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); 
+  z-index: 97;
+}
+
+.b4 {
+/*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
+  z-index: 96;
+}
+
+.c {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg); 
+  z-index: 95;
+}
+
+.d {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg); 
+  z-index: 94;
+}
+
+.e1 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg); 
+  z-index: 92;
+}
+
+.e2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg); 
+  z-index: 91;
+}
+
+.e3 {  z-index: 90;}
+.f {  z-index: 89;}
+
+.a, .b1, .b2, .b3, .c, .d, .e1, .e2 {
+  background-position: 50%;
+  @include vendorize(background-size,cover);
+}

@@ -1,0 +1,356 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.eot);
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.eot?#iefix) format('embedded-opentype'), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.woff) format('woff'), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.ttf) format('truetype'), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.svg) format('svg');
+}
+/* line 31, ../sass/screen.scss */
+::selection {
+  color: #e5eaee;
+  background: #191e24;
+}
+
+/* line 32, ../sass/screen.scss */
+::-moz-selection {
+  color: #e5eaee;
+  background: #191e24;
+}
+
+/* line 39, ../sass/screen.scss */
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100% !important;
+  background: #FFF;
+}
+
+/* line 47, ../sass/screen.scss */
+div, a, p.button, img, li {
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+/* line 48, ../sass/screen.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 50, ../sass/screen.scss */
+a, i {
+  color: #191e24;
+  text-decoration: none;
+}
+/* line 53, ../sass/screen.scss */
+a:hover, i:hover {
+  color: #191e24;
+}
+
+/* line 61, ../sass/screen.scss */
+body {
+  background: #FFF;
+}
+
+/* line 66, ../sass/screen.scss */
+#wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* line 72, ../sass/screen.scss */
+section {
+  width: 100%;
+  height: 800px;
+  padding: 0;
+}
+
+/* line 79, ../sass/screen.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 88, ../sass/screen.scss */
+.panel, nav {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  max-width: 2000px;
+}
+/* line 93, ../sass/screen.scss */
+.panel .container, nav .container {
+  position: absolute;
+  width: 100%;
+}
+/* line 96, ../sass/screen.scss */
+.panel .container .copy, nav .container .copy {
+  display: block;
+}
+/* line 98, ../sass/screen.scss */
+.panel .container .copy h1, nav .container .copy h1 {
+  max-width: 60% !important;
+}
+/* line 101, ../sass/screen.scss */
+.panel .container .copy h1, .panel .container .copy p, nav .container .copy h1, nav .container .copy p {
+  max-width: 40%;
+  display: block;
+  margin: 15px 0 0 20px;
+}
+/* line 105, ../sass/screen.scss */
+.panel .container .copy h1:first-child, .panel .container .copy p:first-child, nav .container .copy h1:first-child, nav .container .copy p:first-child {
+  margin-top: 2%;
+}
+/* line 108, ../sass/screen.scss */
+.panel .container .copy h1 i, .panel .container .copy p i, nav .container .copy h1 i, nav .container .copy p i {
+  padding-left: 15px;
+}
+
+/* line 117, ../sass/screen.scss */
+nav {
+  top: 2%;
+  text-align: right;
+  height: 50px;
+}
+/* line 121, ../sass/screen.scss */
+nav .container {
+  padding-top: 20px;
+}
+/* line 124, ../sass/screen.scss */
+nav a {
+  padding: 20px;
+}
+
+/* line 130, ../sass/screen.scss */
+.info {
+  position: fixed;
+  padding: 5%;
+}
+/* line 134, ../sass/screen.scss */
+.info .container {
+  width: 50%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 750px) {
+  /* line 134, ../sass/screen.scss */
+  .info .container {
+    width: 75%;
+  }
+}
+/* line 140, ../sass/screen.scss */
+.info .container h1 {
+  margin-top: 5%;
+}
+/* line 144, ../sass/screen.scss */
+.info footer {
+  margin: 5% 0;
+}
+
+/* line 152, ../sass/screen.scss */
+.separator {
+  height: 300px;
+}
+
+/* line 161, ../sass/screen.scss */
+body {
+  font-size: 16px;
+  color: #191e24;
+  font-family: 'circular', helvetica, arial, sans-serif;
+  font-weight: 400;
+}
+
+/* line 169, ../sass/screen.scss */
+.header h1 {
+  font-size: 3em;
+}
+/* line 171, ../sass/screen.scss */
+.header h1 i {
+  font-size: .8em;
+}
+
+/* line 178, ../sass/screen.scss */
+nav a {
+  color: #191e24;
+  text-transform: uppercase;
+}
+
+/* line 184, ../sass/screen.scss */
+.panel p {
+  font-size: 2em;
+}
+/* line 186, ../sass/screen.scss */
+.panel p i {
+  font-size: 0.8em;
+}
+
+/* line 191, ../sass/screen.scss */
+.info {
+  text-align: left;
+  font-size: .8em;
+}
+
+/* line 196, ../sass/screen.scss */
+footer {
+  font-size: 80%;
+}
+
+/* line 204, ../sass/screen.scss */
+nav {
+  z-index: 102;
+}
+
+/* line 208, ../sass/screen.scss */
+.dark, .dark a {
+  background: #191e24;
+  color: #e5eaee;
+}
+
+/* line 213, ../sass/screen.scss */
+.light {
+  background: #e5eaee;
+  color: #191e24;
+}
+
+/* line 219, ../sass/screen.scss */
+.a {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg);
+  z-index: 100;
+}
+
+/* line 224, ../sass/screen.scss */
+.b1 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
+  z-index: 99;
+}
+
+/* line 229, ../sass/screen.scss */
+.b2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
+  z-index: 98;
+}
+
+/* line 234, ../sass/screen.scss */
+.b3 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
+  z-index: 97;
+}
+
+/* line 239, ../sass/screen.scss */
+.b4 {
+  /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
+  z-index: 96;
+}
+
+/* line 244, ../sass/screen.scss */
+.c {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg);
+  z-index: 95;
+}
+
+/* line 249, ../sass/screen.scss */
+.d {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg);
+  z-index: 94;
+}
+
+/* line 254, ../sass/screen.scss */
+.e1 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
+  z-index: 92;
+}
+
+/* line 259, ../sass/screen.scss */
+.e2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
+  z-index: 91;
+}
+
+/* line 264, ../sass/screen.scss */
+.e3 {
+  z-index: 90;
+}
+
+/* line 265, ../sass/screen.scss */
+.f {
+  z-index: 89;
+}
+
+/* line 267, ../sass/screen.scss */
+.a, .b1, .b2, .b3, .c, .d, .e1, .e2 {
+  background-position: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
