@@ -24,6 +24,7 @@ Illustrations
 Animations
 ---------
 >To be considered at the end
+
 - add small motions to Ferreol drawings
 - figure out how to add large animations without crashing page (svg manipulation, gifs, html5 video?)
 
@@ -36,6 +37,7 @@ Mobile & Testing
 -------
 
 >All Leo stuff :)
+
 - some easy quick solution w/o depending on fixed backgrounds?
 - test in all major modern browsers
 - change how it works / info into a toggle
