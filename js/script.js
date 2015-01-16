@@ -1,95 +1,17 @@
-// full page https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/jquery.fullPage.min.js
-
-// skrollr js is imported https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/skrollr.min.js
-
-// loading
-/*$(document).ready(function(){   
-    window.setTimeout('fadeout();', 1000);
-}); 
-
-function fadeout(){
-    $('#load').fadeOut('slow', function() {
-    });
-}
-*/
-
-
-// fullpage
-/*$(document).ready(function() {
-    $('#fullpage').fullpage({
-        //Scrolling
-        css3: true,
-        scrollingSpeed: 700,
-        autoScrolling: true,
-        scrollBar: false,
-        easing: 'easeInQuart',
-        easingcss3: 'ease',
-        loopBottom: false,
-        loopTop: false,
-        loopHorizontal: true,
-        continuousVertical: false,
-        normalScrollElements: '#element1, .element2',
-        scrollOverflow: false,
-        touchSensitivity: 15,
-        normalScrollElementTouchThreshold: 5,
-        keyboardScrolling: true,
-        animateAnchor: true,
-        sectionSelector: '.panel',
-
-      
-//callback      
-        afterRender: function(){
-
-          // initialize skrollr
-          skrollr.init();
-
-          // smooth scroll
-          $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                  $('html,body').animate({
-                    scrollTop: target.offset().top +300
-                  }, 1000);
-                  return false;
-                }
-              }
-            });
-          });
-
-          
-        
-        
-        }
-      
-    });
-});*/
-
-
-
-
-
 
 // initialize skrollr
 skrollr.init();
 
-// smooth scroll
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top +300
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+// Stop default behaviours for links
+var a = document.getElementsByTagName('a');
+for(i=0 ; i<a.length ; i++){
+    a[i].addEventListener('click', function(e) {
+        if (this.href === window.location.href) {
+            e.preventDefault();
+        }
+    });
+}
+
 
 // key press 4 down
 function scrollToNext () {
@@ -97,9 +19,12 @@ function scrollToNext () {
   $('section').each(function(i, div){ // loop through article headings
     divtop = $(div).offset().top; // get article heading top
     if (scrollTop < divtop) { // compare if document is below heading
+
       $('html, body').stop().animate({
-        scrollTop: $(div).offset().top
+        scrollTop: $(div).offset().top + 5
     }, 1500,'easeInOutExpo');
+
+      // console.log("ci"); 
 
       return false; // exit function
     }
@@ -113,7 +38,7 @@ function scrollToPrevious () {
     divheight = $(div).height(); 
     if (scrollTop > divtop + divheight - 10) { // compare if document is below heading
       $('html, body').stop().animate({
-        scrollTop: $(div).offset().top
+        scrollTop: $(div).offset().top + 5
     }, 1500,'easeInOutExpo');
 
       return false; // exit function

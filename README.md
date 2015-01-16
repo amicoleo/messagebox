@@ -7,6 +7,7 @@ General
 - something to hide the loading (hold on main MB image, then scroll down to reveal first text)
 - add another frame of Marlene raising the lid
 - Some photos are way too big (n particular photo w/ Marlene face is gigantic). Let's 
+- add location hash when navigating between sections
 
 Navigation & Scrolling
 --------
@@ -15,6 +16,9 @@ Navigation & Scrolling
 >I implemented that with absolute scrolling values and costant values of sections height. Check after `<div id="fullpage">` for info. 
 - Activate arrow keys as navigation between panels - OK
 >I added jQuery easing plugin and revised a bit your code. We now have arrow keys and page up and down for moving between panels. 
+- Use scrollToNext and scrollToPrevious functions for section links behaviours
+- Detect mouse wheel and touch scrolling for moving between sections
+- Add location hashes for navigation
 
 Illustrations
 -----------
