@@ -18,12 +18,18 @@ var infoRaisingTime = 1000;
 $(function() {
 
   //slimScroll 
+  var scrollingAreaHeight = $(window).height()*0.8; 
   $(".info > .container").slimScroll({
-    height: $(".info").height(), 
-    width: $(window).width()*0.8
+    color: '#000000',
+    size: '10px',
+    height: $(window).height()*0.8, 
+    width: $(window).width()*0.8, 
+    alwaysVisible: true, 
   })
   $(".info").css("padding-left", "10%"); 
-
+  $(".info").css("padding-top", $(window).height()*0.1);
+  $(".slimScrollBar").css("opacity", "1.0"); 
+  $(".slimScrollBar").css("border-radius", "0.0"); 
   //Initialize section vars
   homeSection = $('.panel').eq(0); 
   currentSection = homeSection; 

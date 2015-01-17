@@ -161,22 +161,22 @@ nav {
   background-color: #fff; 
 
   .spacer{
-    height: 20px; 
+    height: 10%; 
   }
 
 
   .container {
+    height: 80%; 
     position: static; 
     width: 50%;
     margin: 0 auto;
     @media screen and (max-width: $break-sm) {
       width: 75%;
     }
-    // h1 {
-    //   margin-top: ;
-    // }  
     p {
       font-size: 1em;
+      width: 80%; 
+      margin-left: 10%; 
     } 
   } 
   footer {
