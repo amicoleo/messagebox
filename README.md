@@ -8,7 +8,8 @@ TODO LIST
 - color of section links when on black panels
 - info link becomes a X when active
 - info link adds location hash
-
+- delete "how it works" link
+- tweak arrow icons for links
 
 General
 ------

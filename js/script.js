@@ -33,19 +33,41 @@ $(function() {
 });
 
 function showInfo(){
+  
+
   if (!infoToggle){
+    $(".info-link").css("opacity", "0.0"); 
+    $(".info-link").removeAttr("href");  
     $(".info").animate({
       "margin-top": "0%"
       }, infoRaisingTime, function(){
       infoToggle = true; 
       panelTransition = false; 
+      $(".info-link").html('<i class="fa fa-times"></i>');
+      $(".info-link").animate({
+      opacity: 1.0
+      }, infoRaisingTime, function(){
+        $(".info-link").attr("href", "#"); 
+      }
+
+    );
     });
   }else{
+    $(".info-link").css("opacity", "0.0"); 
+    $(".info-link").removeAttr("href");  
     $(".info").animate({
       "margin-top": "100%"
       }, infoRaisingTime, function(){
-      infoToggle = false; 
-      panelTransition = false; 
+        infoToggle = false; 
+        panelTransition = false; 
+        $(".info-link").html('info');
+        $(".info-link").animate({
+        opacity: 1.0
+        }, infoRaisingTime, 
+          function(){
+            $(".info-link").attr("href", "#");  
+          }
+      );
     });
   }
   
