@@ -33,9 +33,8 @@ $(function() {
 });
 
 function showInfo(){
-  
-
   if (!infoToggle){
+    setLocationHash("info");
     $(".info-link").css("opacity", "0.0"); 
     $(".info-link").removeAttr("href");  
     $(".info").animate({
@@ -47,7 +46,7 @@ function showInfo(){
       $(".info-link").animate({
       opacity: 1.0
       }, infoRaisingTime, function(){
-        $(".info-link").attr("href", "#"); 
+        $(".info-link").attr("href", "#");  
       }
 
     );
@@ -55,6 +54,7 @@ function showInfo(){
   }else{
     $(".info-link").css("opacity", "0.0"); 
     $(".info-link").removeAttr("href");  
+    setLocationHash("");
     $(".info").animate({
       "margin-top": "100%"
       }, infoRaisingTime, function(){
@@ -176,4 +176,34 @@ function MouseWheelHandler(e) {
       scrollToPrevious(); 
   }
 
+}
+
+
+//Hash navigation 
+function getLocationHash(){
+  return window.location.hash.substring(1);
+}
+
+function setLocationHash(str){
+  window.location.hash = str;
+}
+
+window.onhashchange = function(e) {
+    if (panelTransition)
+        panelTransition = false; 
+    else {
+        setCurrentPanelFromHash(); 
+    }
+}
+
+function setCurrentPanelFromHash(){
+  if (getLocationHash() == "info"){
+    if (!infoToggle){
+      showInfo(); 
+    }
+  }else{
+    if (infoToggle){
+      showInfo(); 
+    }
+  }
 }

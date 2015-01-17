@@ -2,14 +2,17 @@ TODO LIST
 ========
 
 
+
+- navigation to-from info section - OK
+- info link becomes a X when active - OK
+- delete "how it works" link - OK
+- info link adds location hash 
+
 - Add scrollbar on info section
 	http://rocha.la/jQuery-slimScroll/
-- navigation to-from info section - OK
 - color of section links when on black panels
-- info link becomes a X when active
-- info link adds location hash
-- delete "how it works" link
 - tweak arrow icons for links
+- move between section with scrolling events (so that works for touchscreen too)
 
 General
 ------
