@@ -1,6 +1,15 @@
 TODO LIST
 ========
 
+
+- Add scrollbar on info section
+	http://rocha.la/jQuery-slimScroll/
+- navigation to-from info section - OK
+- color of section links when on black panels
+- info link becomes a X when active
+- info link adds location hash
+
+
 General
 ------
 
@@ -19,6 +28,7 @@ Navigation & Scrolling
 - Use scrollToNext and scrollToPrevious functions for section links behaviours
 - Detect mouse wheel and touch scrolling for moving between sections
 - Add location hashes for navigation
+- Revise easing function values for moving between sections
 
 Illustrations
 -----------

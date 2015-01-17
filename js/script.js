@@ -1,51 +1,121 @@
 
-// initialize skrollr
-skrollr.init();
+// // initialize skrollr
+// skrollr.init();
 
-// Stop default behaviours for links
-var a = document.getElementsByTagName('a');
-for(i=0 ; i<a.length ; i++){
-    a[i].addEventListener('click', function(e) {
-        if (this.href === window.location.href) {
-            e.preventDefault();
-        }
+var currentSection, homeSection; 
+var mouseWheelTransition = false; 
+var panelTransition = false; 
+
+//Constants
+var fadeTime = 1000; 
+
+//
+var infoToggle = false; 
+var infoRaisingTime = 1000; 
+
+
+
+$(function() {
+  //Initialize section vars
+  homeSection = $('.panel').eq(0); 
+  currentSection = homeSection; 
+  console.log("current section: "+currentSection); 
+
+  // Stop default behaviours for links
+  var a = document.getElementsByTagName('a');
+  for(i=0 ; i<a.length ; i++){
+      a[i].addEventListener('click', function(e) {
+          if (this.href === window.location.href) {
+              e.preventDefault();
+          }
+      });
+  }
+});
+
+function showInfo(){
+  if (!infoToggle){
+    $(".info").animate({
+      "margin-top": "0%"
+      }, infoRaisingTime, function(){
+      infoToggle = true; 
+      panelTransition = false; 
     });
+  }else{
+    $(".info").animate({
+      "margin-top": "100%"
+      }, infoRaisingTime, function(){
+      infoToggle = false; 
+      panelTransition = false; 
+    });
+  }
+  
 }
 
 
 // key press 4 down
 function scrollToNext () {
-  scrollTop = $(window).scrollTop();
-  $('section').each(function(i, div){ // loop through article headings
-    divtop = $(div).offset().top; // get article heading top
-    if (scrollTop < divtop) { // compare if document is below heading
+  if (!panelTransition){
 
-      $('html, body').stop().animate({
-        scrollTop: $(div).offset().top + 5
-    }, 1500,'easeInOutExpo');
+    //If we are in the section before info
+    if (currentSection.hasClass("e3")){
+      showInfo();
+    }else if (!infoToggle){
+      $('.panel').each(function(i, div){ // loop through article headings
+        if ($(div).attr("class") == currentSection.attr("class")){
+          if (i < $('.panel').length -1){
+            panelTransition = true; 
+            var nextSection = $('.panel').eq(i+1);
+            nextSection.css("visibility", "visible");
+            nextSection.animate({
+            opacity: 1.0
+            }, fadeTime);
 
-      // console.log("ci"); 
-
-      return false; // exit function
+            $(div).animate({
+              opacity: 0.0
+            }, fadeTime, function(){
+              currentSection.css("visibility", "hidden"); 
+              currentSection = nextSection; 
+              panelTransition = false; 
+            });
+          }
+        }
+      });
     }
-  });
+  }
 }
 
 function scrollToPrevious () {
-  scrollTop = $(window).scrollTop();
-  $($('section').get().reverse()).each(function(i, div){ // loop through article headings
-    divtop = $(div).offset().top; // get article heading top
-    divheight = $(div).height(); 
-    if (scrollTop > divtop + divheight - 10) { // compare if document is below heading
-      $('html, body').stop().animate({
-        scrollTop: $(div).offset().top + 5
-    }, 1500,'easeInOutExpo');
+  if (!panelTransition){
 
-      return false; // exit function
+    //If we are in the section before info
+    if (infoToggle){
+      showInfo();
+    }else{
+      $('.panel').each(function(i, div){ // loop through article headings
+        if ($(div).attr("class") == currentSection.attr("class")){
+          if (i > 0){
+            panelTransition = true; 
+            var nextSection = $('.panel').eq(i-1);
+            nextSection.css("visibility", "visible");
+            nextSection.animate({
+            opacity: 1.0
+            }, fadeTime);
+
+            $(div).animate({
+              opacity: 0.0
+            }, fadeTime, function(){
+              currentSection.css("visibility", "hidden"); 
+              currentSection = nextSection; 
+              panelTransition = false; 
+            });
+          }
+        }
+      });
     }
-  });
+  }
 }
 
+// On keys
 jQuery(function () {
   $(document).keydown(function (evt) {
     if (evt.keyCode == 40 || evt.keyCode == 34) { // down arrow
@@ -59,3 +129,29 @@ jQuery(function () {
     }
   });
 });
+
+//On mousewheel
+if (document.addEventListener) {
+  // IE9, Chrome, Safari, Opera
+  document.addEventListener("mousewheel", MouseWheelHandler, false);
+  // Firefox
+  document.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+}
+// IE 6/7/8
+else document.attachEvent("onmousewheel", MouseWheelHandler);
+
+function MouseWheelHandler(e) {
+  e.preventDefault(); 
+  // cross-browser wheel delta
+  var e = window.event || e; // old IE support
+  var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+
+  if (!mouseWheelTransition){
+    mouseWheelTransition = true; 
+    if (delta == -1)
+      scrollToNext(); 
+    if (delta == 1)
+      scrollToPrevious(); 
+  }
+
+}
