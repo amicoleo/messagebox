@@ -19,8 +19,10 @@ $(function() {
 
   //slimScroll 
   $(".info > .container").slimScroll({
-    height: $(".info").height()
+    height: $(".info").height(), 
+    width: $(window).width()*0.8
   })
+  $(".info").css("padding-left", "10%"); 
 
   //Initialize section vars
   homeSection = $('.panel').eq(0); 

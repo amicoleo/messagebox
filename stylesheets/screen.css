@@ -98,41 +98,41 @@ img {
   max-width: 100%;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 a, i {
   color: #191e24;
   text-decoration: none;
 }
-/* line 53, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 a:hover, i:hover {
   color: #191e24;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 body {
   background: #FFF;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #wrapper {
   max-width: 2000px;
   margin: 0 auto;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 section {
   width: 100%;
   height: 800px;
   padding: 0;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .panel, nav {
   position: fixed;
   visibility: hidden;
@@ -141,56 +141,62 @@ section {
   width: 100%;
   max-width: 2000px;
 }
-/* line 96, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .panel .container, nav .container {
   position: absolute;
   width: 100%;
 }
-/* line 99, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .panel .container .copy, nav .container .copy {
   display: block;
 }
-/* line 101, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .panel .container .copy h1, nav .container .copy h1 {
   max-width: 60% !important;
 }
-/* line 104, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .panel .container .copy h1, .panel .container .copy p, nav .container .copy h1, nav .container .copy p {
   max-width: 40%;
   display: block;
   margin: 15px 0 0 20px;
 }
-/* line 108, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .panel .container .copy h1:first-child, .panel .container .copy p:first-child, nav .container .copy h1:first-child, nav .container .copy p:first-child {
   margin-top: 2%;
 }
-/* line 111, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .panel .container .copy h1 i, .panel .container .copy p i, nav .container .copy h1 i, nav .container .copy p i {
   padding-left: 15px;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
+.info img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* line 131, ../sass/screen.scss */
 .header, nav {
   visibility: visible;
   opacity: 1.0;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 nav {
   top: 2%;
   text-align: right;
   height: 50px;
 }
-/* line 130, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 nav .container {
   padding-top: 20px;
 }
-/* line 133, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 nav a {
   padding: 20px;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .info {
   position: fixed;
   margin-top: 100%;
@@ -202,32 +208,32 @@ nav a {
   visibility: visible;
   background-color: #fff;
 }
-/* line 151, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .info .spacer {
   height: 20px;
 }
-/* line 156, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .info .container {
   position: static;
   width: 50%;
   margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 156, ../sass/screen.scss */
+  /* line 168, ../sass/screen.scss */
   .info .container {
     width: 75%;
   }
 }
-/* line 166, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .info .container p {
   font-size: 1em;
 }
-/* line 170, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .info footer {
   margin: 5% 0;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 body {
   font-size: 16px;
   color: #191e24;
@@ -235,104 +241,104 @@ body {
   font-weight: 400;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .header h1 {
   font-size: 3em;
 }
-/* line 189, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .header h1 i {
   font-size: .8em;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 nav a {
   color: #191e24;
   text-transform: uppercase;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .panel p {
   font-size: 2em;
 }
-/* line 204, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .panel p i {
   font-size: 0.8em;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .info {
   text-align: left;
   font-size: .8em;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 footer {
   font-size: 80%;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 nav {
   z-index: 102;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .dark, .dark a {
   background: #191e24;
   color: #e5eaee;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .light {
   background: #e5eaee;
   color: #191e24;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg);
 }
 
-/* line 242, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .b1 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .b2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
 }
 
-/* line 252, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .b3 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
 }
 
-/* line 257, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .b4 {
   /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
 }
 
-/* line 262, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .c {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg);
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .d {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg);
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .e1 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .e2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
 }
 
-/* line 285, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .a, .b1, .b2, .b3, .c, .d, .e1, .e2 {
   background-position: 50%;
   -webkit-background-size: cover;

@@ -45,7 +45,9 @@ body, html {
 }
 
 // div, a, p.button, img, li {@include vendorize(transition, $transition);}
-img {max-width: 100%;}
+img {
+  max-width: 100%;
+}
 
 a, i {
   color: $dark;
@@ -115,6 +117,16 @@ $text-vert-spacing: 2%;
     }
   }
 } 
+
+
+.info {
+    img {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+
 
 .header, nav{
   visibility: visible; 
