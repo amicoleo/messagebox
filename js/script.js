@@ -16,6 +16,12 @@ var infoRaisingTime = 1000;
 
 
 $(function() {
+
+  //slimScroll 
+  $(".info > .container").slimScroll({
+    height: $(".info").height()
+  })
+
   //Initialize section vars
   homeSection = $('.panel').eq(0); 
   currentSection = homeSection; 
