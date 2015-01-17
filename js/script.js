@@ -79,7 +79,7 @@ function scrollToNext () {
   if (!panelTransition){
 
     //If we are in the section before info
-    if (currentSection.hasClass("e3")){
+    if (currentSection.hasClass("e3") && !infoToggle){
       showInfo();
     }else if (!infoToggle){
       $('.panel').each(function(i, div){ // loop through article headings
