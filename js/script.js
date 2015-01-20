@@ -154,12 +154,12 @@ function scrollToPrevious () {
 // On keys
 jQuery(function () {
   $(document).keydown(function (evt) {
-    if (evt.keyCode == 40 || evt.keyCode == 34) { // down arrow
+    if (evt.keyCode == 40 || evt.keyCode == 34 || evt.keyCode == 39 ) { // down arrow
       evt.preventDefault(); // prevents the usual scrolling behaviour
       scrollToNext(); // scroll to the next new heading instead
     }
 
-    if (evt.keyCode == 38 || evt.keyCode == 33){
+    if (evt.keyCode == 38 || evt.keyCode == 33 || evt.keyCode == 37){
       evt.preventDefault(); // prevents the usual scrolling behaviour
       scrollToPrevious(); // scroll to the next new heading instead
     }

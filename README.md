@@ -2,17 +2,26 @@ TODO LIST
 ========
 
 
+- image of marlene shouldn't reload 
+- image of the message box in the first frames shouldn't reload
+- color of info link on dark panels
+- Arrow scrolling when on info (override normal arrow behaviou)
 
 - navigation to-from info section - OK
 - info link becomes a X when active - OK
 - delete "how it works" link - OK
-- info link adds location hash 
+- info link adds location hash - OK
 
 - Add scrollbar on info section
-	http://rocha.la/jQuery-slimScroll/
-- color of section links when on black panels
-- tweak arrow icons for links
+	http://rocha.la/jQuery-slimScroll/ - OK
 - move between section with scrolling events (so that works for touchscreen too)
+- minify everything (and be careful to use minified libs)
+
+	http://jsfiddle.net/Mottie/rgmrw/1/
+- Black rail for scrollbar
+- Info section loaded with ajax 
+	- so there's 
+- Hack scrollbar for resizing (otherwise is problema)
 
 General
 ------

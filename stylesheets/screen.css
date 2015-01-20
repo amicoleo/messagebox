@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -72,19 +68,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.eot);
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.eot?#iefix) format('embedded-opentype'), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.woff) format('woff'), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.ttf) format('truetype'), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/CircularStd-Bold.svg) format('svg');
 }
-/* line 31, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 ::selection {
   color: #e5eaee;
   background: #191e24;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 ::-moz-selection {
   color: #e5eaee;
   background: #191e24;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 body, html {
   padding: 0;
   margin: 0;
@@ -93,46 +89,46 @@ body, html {
   background: #FFF;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 img {
   max-width: 100%;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 a, i {
   color: #191e24;
   text-decoration: none;
 }
-/* line 55, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 a:hover, i:hover {
   color: #191e24;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 body {
   background: #FFF;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 #wrapper {
   max-width: 2000px;
   margin: 0 auto;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 section {
   width: 100%;
   height: 800px;
   padding: 0;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .panel, nav {
   position: fixed;
   visibility: hidden;
@@ -141,38 +137,49 @@ section {
   width: 100%;
   max-width: 2000px;
 }
-/* line 98, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .panel .container, nav .container {
   position: absolute;
   width: 100%;
 }
-/* line 101, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .panel .container .copy, nav .container .copy {
   display: block;
 }
-/* line 103, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .panel .container .copy h1, nav .container .copy h1 {
   max-width: 60% !important;
 }
-/* line 106, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .panel .container .copy h1, .panel .container .copy p, nav .container .copy h1, nav .container .copy p {
   max-width: 40%;
   display: block;
   margin: 15px 0 0 20px;
 }
-/* line 110, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .panel .container .copy h1:first-child, .panel .container .copy p:first-child, nav .container .copy h1:first-child, nav .container .copy p:first-child {
   margin-top: 2%;
 }
-/* line 113, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .panel .container .copy h1 i, .panel .container .copy p i, nav .container .copy h1 i, nav .container .copy p i {
   padding-left: 15px;
 }
-
-/* line 123, ../sass/screen.scss */
-.info img {
-  width: 80%;
-  margin-left: 10%;
+/* line 112, ../sass/screen.scss */
+.panel .container .copy h1.nav, .panel .container .copy p.nav, nav .container .copy h1.nav, nav .container .copy p.nav {
+  margin-top: 0;
+}
+/* line 114, ../sass/screen.scss */
+.panel .container .copy h1.nav a:first-child i, .panel .container .copy p.nav a:first-child i, nav .container .copy h1.nav a:first-child i, nav .container .copy p.nav a:first-child i {
+  padding-right: 15px;
+  padding-left: 0 !important;
+}
+/* line 118, ../sass/screen.scss */
+.panel .container .copy h1.nav a:nth-child(2) i, .panel .container .copy p.nav a:nth-child(2) i, nav .container .copy h1.nav a:nth-child(2) i, nav .container .copy p.nav a:nth-child(2) i {
+  padding-left: 15px;
+}
+/* line 122, ../sass/screen.scss */
+.panel .container .copy h1.nav-only, .panel .container .copy p.nav-only, nav .container .copy h1.nav-only, nav .container .copy p.nav-only {
+  margin-top: 2%;
 }
 
 /* line 131, ../sass/screen.scss */
@@ -186,17 +193,25 @@ nav {
   top: 2%;
   text-align: right;
   height: 50px;
+  width: auto;
+  right: 0;
 }
-/* line 142, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 nav .container {
   padding-top: 20px;
+  width: auto;
+  right: 0;
 }
-/* line 145, ../sass/screen.scss */
-nav a {
+/* line 149, ../sass/screen.scss */
+nav a, nav i {
   padding: 20px;
 }
-
 /* line 152, ../sass/screen.scss */
+nav .info-link {
+  text-align: center;
+}
+
+/* line 159, ../sass/screen.scss */
 .info {
   position: fixed;
   margin-top: 100%;
@@ -208,35 +223,42 @@ nav a {
   visibility: visible;
   background-color: #fff;
 }
-/* line 163, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .info .spacer {
   height: 10%;
 }
-/* line 168, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .info .container {
-  height: 80%;
   position: static;
-  width: 50%;
   margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 168, ../sass/screen.scss */
+  /* line 175, ../sass/screen.scss */
   .info .container {
     width: 75%;
   }
 }
-/* line 176, ../sass/screen.scss */
-.info .container p {
-  font-size: 1em;
-  width: 80%;
-  margin-left: 10%;
+/* line 181, ../sass/screen.scss */
+.info .container h1, .info .container p {
+  margin: 0 auto 2% auto;
+  width: 50%;
 }
-/* line 182, ../sass/screen.scss */
-.info footer {
-  margin: 5% 0;
+/* line 185, ../sass/screen.scss */
+.info .container h1 {
+  font-size: 1em;
+}
+/* line 188, ../sass/screen.scss */
+.info .container p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+/* line 193, ../sass/screen.scss */
+.info .container .footer {
+  font-size: 0.7em;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 body {
   font-size: 16px;
   color: #191e24;
@@ -244,105 +266,126 @@ body {
   font-weight: 400;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .header h1 {
   font-size: 3em;
 }
-/* line 201, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .header h1 i {
   font-size: .8em;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 nav a {
   color: #191e24;
   text-transform: uppercase;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
+.dark .container .copy p {
+  max-width: 70%;
+  font-size: 3em;
+}
+
+/* line 234, ../sass/screen.scss */
 .panel p {
   font-size: 2em;
+  line-height: 1.2em;
 }
-/* line 216, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .panel p i {
   font-size: 0.8em;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .info {
   text-align: left;
   font-size: .8em;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 footer {
   font-size: 80%;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 nav {
   z-index: 102;
 }
 
-/* line 238, ../sass/screen.scss */
-.dark, .dark a {
+/* line 259, ../sass/screen.scss */
+.dark {
   background: #191e24;
   color: #e5eaee;
 }
+/* line 262, ../sass/screen.scss */
+.dark a, .dark i {
+  color: #e5eaee;
+  background: none;
+}
+/* line 266, ../sass/screen.scss */
+.dark p.second {
+  margin-top: 15% !important;
+}
 
-/* line 243, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .light {
   background: #e5eaee;
   color: #191e24;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg);
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .b1 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .b2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .b3 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
 }
 
-/* line 269, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .b4 {
   /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
 }
 
-/* line 274, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .c {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg);
 }
 
-/* line 279, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
+.c2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c2.jpg);
+}
+
+/* line 312, ../sass/screen.scss */
 .d {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg);
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .e1 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
 }
 
-/* line 289, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .e2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
 }
 
-/* line 297, ../sass/screen.scss */
-.a, .b1, .b2, .b3, .c, .d, .e1, .e2 {
+/* line 327, ../sass/screen.scss */
+.a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2 {
   background-position: 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
