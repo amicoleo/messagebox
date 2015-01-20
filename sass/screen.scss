@@ -273,6 +273,19 @@ nav {
   color: $dark;
 }
 
+.m-b {
+  @extend .panel; 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); 
+   background-position: 50%;
+  @include vendorize(background-size,cover);
+}
+
+.marlene {
+  @extend .panel; 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg); 
+   background-position: 50%;
+  @include vendorize(background-size,cover);
+}
 
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg); 
@@ -280,17 +293,17 @@ nav {
 }
 
 .b1 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png); 
   // z-index: 99;
 }
 
 .b2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png); 
   // z-index: 98;
 }
 
 .b3 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png); 
   // z-index: 97;
 }
 
@@ -315,16 +328,14 @@ nav {
 }
 
 .e1 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg); 
   // z-index: 92;
 }
 
 .e2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg); 
   // z-index: 91;
 }
 
-.a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2 {
+.a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb{
   background-position: 50%;
   @include vendorize(background-size,cover);
 }

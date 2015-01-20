@@ -129,7 +129,7 @@ section {
 }
 
 /* line 87, ../sass/screen.scss */
-.panel, nav {
+.panel, .m-b, .marlene, nav {
   position: fixed;
   visibility: hidden;
   opacity: 0.0;
@@ -138,47 +138,47 @@ section {
   max-width: 2000px;
 }
 /* line 94, ../sass/screen.scss */
-.panel .container, nav .container {
+.panel .container, .m-b .container, .marlene .container, nav .container {
   position: absolute;
   width: 100%;
 }
 /* line 97, ../sass/screen.scss */
-.panel .container .copy, nav .container .copy {
+.panel .container .copy, .m-b .container .copy, .marlene .container .copy, nav .container .copy {
   display: block;
 }
 /* line 99, ../sass/screen.scss */
-.panel .container .copy h1, nav .container .copy h1 {
+.panel .container .copy h1, .m-b .container .copy h1, .marlene .container .copy h1, nav .container .copy h1 {
   max-width: 60% !important;
 }
 /* line 102, ../sass/screen.scss */
-.panel .container .copy h1, .panel .container .copy p, nav .container .copy h1, nav .container .copy p {
+.panel .container .copy h1, .m-b .container .copy h1, .marlene .container .copy h1, .panel .container .copy p, .m-b .container .copy p, .marlene .container .copy p, nav .container .copy h1, nav .container .copy p {
   max-width: 40%;
   display: block;
   margin: 15px 0 0 20px;
 }
 /* line 106, ../sass/screen.scss */
-.panel .container .copy h1:first-child, .panel .container .copy p:first-child, nav .container .copy h1:first-child, nav .container .copy p:first-child {
+.panel .container .copy h1:first-child, .m-b .container .copy h1:first-child, .marlene .container .copy h1:first-child, .panel .container .copy p:first-child, .m-b .container .copy p:first-child, .marlene .container .copy p:first-child, nav .container .copy h1:first-child, nav .container .copy p:first-child {
   margin-top: 2%;
 }
 /* line 109, ../sass/screen.scss */
-.panel .container .copy h1 i, .panel .container .copy p i, nav .container .copy h1 i, nav .container .copy p i {
+.panel .container .copy h1 i, .m-b .container .copy h1 i, .marlene .container .copy h1 i, .panel .container .copy p i, .m-b .container .copy p i, .marlene .container .copy p i, nav .container .copy h1 i, nav .container .copy p i {
   padding-left: 15px;
 }
 /* line 112, ../sass/screen.scss */
-.panel .container .copy h1.nav, .panel .container .copy p.nav, nav .container .copy h1.nav, nav .container .copy p.nav {
+.panel .container .copy h1.nav, .m-b .container .copy h1.nav, .marlene .container .copy h1.nav, .panel .container .copy p.nav, .m-b .container .copy p.nav, .marlene .container .copy p.nav, nav .container .copy h1.nav, nav .container .copy p.nav {
   margin-top: 0;
 }
 /* line 114, ../sass/screen.scss */
-.panel .container .copy h1.nav a:first-child i, .panel .container .copy p.nav a:first-child i, nav .container .copy h1.nav a:first-child i, nav .container .copy p.nav a:first-child i {
+.panel .container .copy h1.nav a:first-child i, .m-b .container .copy h1.nav a:first-child i, .marlene .container .copy h1.nav a:first-child i, .panel .container .copy p.nav a:first-child i, .m-b .container .copy p.nav a:first-child i, .marlene .container .copy p.nav a:first-child i, nav .container .copy h1.nav a:first-child i, nav .container .copy p.nav a:first-child i {
   padding-right: 15px;
   padding-left: 0 !important;
 }
 /* line 118, ../sass/screen.scss */
-.panel .container .copy h1.nav a:nth-child(2) i, .panel .container .copy p.nav a:nth-child(2) i, nav .container .copy h1.nav a:nth-child(2) i, nav .container .copy p.nav a:nth-child(2) i {
+.panel .container .copy h1.nav a:nth-child(2) i, .m-b .container .copy h1.nav a:nth-child(2) i, .marlene .container .copy h1.nav a:nth-child(2) i, .panel .container .copy p.nav a:nth-child(2) i, .m-b .container .copy p.nav a:nth-child(2) i, .marlene .container .copy p.nav a:nth-child(2) i, nav .container .copy h1.nav a:nth-child(2) i, nav .container .copy p.nav a:nth-child(2) i {
   padding-left: 15px;
 }
 /* line 122, ../sass/screen.scss */
-.panel .container .copy h1.nav-only, .panel .container .copy p.nav-only, nav .container .copy h1.nav-only, nav .container .copy p.nav-only {
+.panel .container .copy h1.nav-only, .m-b .container .copy h1.nav-only, .marlene .container .copy h1.nav-only, .panel .container .copy p.nav-only, .m-b .container .copy p.nav-only, .marlene .container .copy p.nav-only, nav .container .copy h1.nav-only, nav .container .copy p.nav-only {
   margin-top: 2%;
 }
 
@@ -288,12 +288,12 @@ nav a {
 }
 
 /* line 234, ../sass/screen.scss */
-.panel p {
+.panel p, .m-b p, .marlene p {
   font-size: 2em;
   line-height: 1.2em;
 }
 /* line 237, ../sass/screen.scss */
-.panel p i {
+.panel p i, .m-b p i, .marlene p i {
   font-size: 0.8em;
 }
 
@@ -334,58 +334,70 @@ nav {
   color: #191e24;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
+.m-b {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
+  background-position: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 283, ../sass/screen.scss */
+.marlene {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
+  background-position: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 290, ../sass/screen.scss */
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg);
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .b1 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png);
 }
 
-/* line 287, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 .b2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png);
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .b3 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png);
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .b4 {
   /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .c {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg);
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .c2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c2.jpg);
 }
 
-/* line 312, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .d {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg);
 }
 
-/* line 317, ../sass/screen.scss */
-.e1 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
-}
-
-/* line 322, ../sass/screen.scss */
-.e2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
-}
-
-/* line 327, ../sass/screen.scss */
-.a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2 {
+/* line 338, ../sass/screen.scss */
+.a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb {
   background-position: 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
