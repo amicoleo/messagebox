@@ -4,8 +4,11 @@ TODO LIST
 
 - image of marlene shouldn't reload 
 - image of the message box in the first frames shouldn't reload
-- color of info link on dark panels
+
+- color of info link on dark panels - OK
+- allow reaching info page when linked - OK
 - Arrow scrolling when on info (override normal arrow behaviou)
+	http://jsfiddle.net/Mottie/rgmrw/1/
 
 - navigation to-from info section - OK
 - info link becomes a X when active - OK
@@ -17,7 +20,6 @@ TODO LIST
 - move between section with scrolling events (so that works for touchscreen too)
 - minify everything (and be careful to use minified libs)
 
-	http://jsfiddle.net/Mottie/rgmrw/1/
 - Black rail for scrollbar
 - Info section loaded with ajax 
 	- so there's 

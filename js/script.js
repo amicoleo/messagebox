@@ -16,6 +16,9 @@ var infoRaisingTime = 1000;
 
 
 $(function() {
+  //Check if info hash
+  if (getLocationHash() == "info")
+    showInfo(); 
 
   //slimScroll 
   var scrollingAreaHeight = $(window).height()*0.8; 
@@ -33,7 +36,6 @@ $(function() {
   //Initialize section vars
   homeSection = $('.panel').eq(0); 
   currentSection = homeSection; 
-  console.log("current section: "+currentSection); 
 
   // Stop default behaviours for links
   var a = document.getElementsByTagName('a');
