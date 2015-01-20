@@ -112,6 +112,10 @@ function scrollToNext () {
               currentSection.css("visibility", "hidden"); 
               currentSection = nextSection; 
               panelTransition = false; 
+               if (currentSection.hasClass("dark"))
+                $(".info-link").css("color", "#fff"); 
+              else
+                $(".info-link").css("color", "#000");
             });
           }
         }
@@ -143,6 +147,10 @@ function scrollToPrevious () {
               currentSection.css("visibility", "hidden"); 
               currentSection = nextSection; 
               panelTransition = false; 
+               if (currentSection.hasClass("dark"))
+                $(".info-link").css("color", "#fff"); 
+              else
+                $(".info-link").css("color", "#000");
             });
           }
         }
