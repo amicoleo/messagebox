@@ -5,6 +5,7 @@
 var currentSection, homeSection; 
 var mouseWheelTransition = false; 
 var panelTransition = false; 
+var reachedTopOfInfo = true;
 
 //Constants
 var fadeTime = 1000; 
@@ -20,24 +21,8 @@ $(function() {
   if (getLocationHash() == "info")
     showInfo(); 
 
-  //slimScroll 
-  var scrollingAreaHeight = $(window).height()*0.8; 
-  $(".info > .container").slimScroll({
-    color: '#000000',
-    size: '10px',
-    height: $(window).height()*0.8, 
-    width: $(window).width()*0.8, 
-    alwaysVisible: true, 
-    railVisible: true
-  })
-  $(".info").css("padding-left", "10%"); 
-  $(".info").css("padding-top", $(window).height()*0.1);
-  $(".slimScrollBar").css("opacity", "1.0"); 
-  $(".slimScrollBar").css("border-radius", "0.0"); 
-  
-  $(".slimScrollRail").css("opacity", "0.1"); 
-  $(".slimScrollRail").css("background-color", "#000"); 
-  $(".slimScrollRail").css("border-radius", "0.0"); 
+  $(".scroll-container").perfectScrollbar();
+
   //Initialize section vars
   homeSection = $('.panel').eq(0); 
   currentSection = homeSection; 
@@ -216,7 +201,9 @@ jQuery(function () {
 
     if (evt.keyCode == 38 || evt.keyCode == 33 || evt.keyCode == 37){
       evt.preventDefault(); // prevents the usual scrolling behaviour
-      scrollToPrevious(); // scroll to the next new heading instead
+      
+      if (reachedTopOfInfo)
+        scrollToPrevious(); // scroll to the next new heading instead
     }
   });
 });
@@ -264,6 +251,17 @@ window.onhashchange = function(e) {
         setCurrentPanelFromHash(); 
     }
 }
+
+window.onresize = function(){
+  $(".scroll-container").perfectScrollbar("update");
+}
+
+$(".scroll-container").scroll(function(){
+  if ($(".scroll-container").scrollTop() == 0)
+    reachedTopOfInfo = true; 
+  else
+    reachedTopOfInfo = false; 
+}); 
 
 function setCurrentPanelFromHash(){
   if (getLocationHash() == "info"){

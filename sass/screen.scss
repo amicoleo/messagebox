@@ -9,6 +9,8 @@ $link-color: #3F4999;
 $hover-color: #27333E;
 $transition: 0.3s ease all; 
 $dark: rgb(25,30,36);
+$dark-alpha: rgba(25,30,36, 0.1);
+
 $light: rgb(229,234,238);
 
 $break-med: 1000px;
@@ -342,4 +344,28 @@ nav {
 .a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb{
   background-position: 50%;
   @include vendorize(background-size,cover);
+}
+
+//Scroll
+
+.scroll-container{
+  position: absolute; 
+  height: 80%; 
+  overflow: hidden; 
+  margin-top: 5%;
+}
+
+.ps-container{
+  .ps-scrollbar-y-rail{
+    position: absolute; 
+    right: 25%; 
+    width: 8px; 
+    background-color: $dark-alpha;
+    margin-right: -$copy-left-spacing; 
+  }
+  .ps-scrollbar-y {
+    position: absolute; 
+    width: 8px; 
+    background-color: $dark;
+  }
 }
