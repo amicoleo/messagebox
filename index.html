@@ -15,6 +15,8 @@
     <div class="copy">
       <a class="info-link" href="#" onclick="showInfo()">info</a>
     </div>
+    <a href="#" class="arrow" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-up"></i></a>
+    <a href="#" class="arrow" onclick="scrollToNext()"><i class="fa fa-long-arrow-down"></i></a
   </div>
 </nav>
   
@@ -35,7 +37,7 @@
     <div class="panel a header" onclick="scrollToNext()">
     <div class="container">
       <div class="copy">
-        <h1><a href="#" onclick="scrollToNext()">Message Box is a design experiment with memory and time <i class="fa fa-long-arrow-right"></i></a></h1>
+        <h1><a href="#" onclick="scrollToNext()">Message Box is a design experiment with memory and time</a></h1>
        </div>
        </div>
   </div>  
@@ -46,7 +48,6 @@
     <div class="container">
       <div class="copy">
         <p><a href="#" onclick="scrollToNext()">Place the Message Box in your living space.</a></p>
-        <p class="nav"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
       </div>
     </div>
   </div>    
@@ -56,7 +57,6 @@
     <div class="container">
       <div class="copy">
         <p><a href="#" onclick="scrollToNext()">Over time, it becomes a familiar object, and you stop noticing it.</a></p>
-        <p class="nav"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
       </div>
     </div>
   </div>  
@@ -66,7 +66,6 @@
     <div class="container">
       <div class="copy">
         <p><a href="#" onclick="scrollToNext()">Meanwhile, the Message Box is randomly recording the voices in your home. </a></p>
-        <p class="nav"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
       </div>
     </div>
   </div>  
@@ -76,7 +75,6 @@
     <div class="container">
       <div class="copy">
         <p><a href="#" onclick="scrollToNext()">One day, you might remember the Message Box again.</a></p>
-        <p class="nav"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
       </div>
     </div>  
   </div>  
@@ -86,7 +84,7 @@
   <div class="panel c" onclick="scrollToNext()">
     <div class="container">
       <div class="copy">
-        <p class="nav nav-only"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
+
       </div> 
     </div>  
     </div> 
@@ -94,7 +92,7 @@
   <div class="panel c2" onclick="scrollToNext()">
   <div class="container">
     <div class="copy">
-      <p class="nav nav-only"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
+
     </div> 
   </div>  
   </div> 
@@ -102,7 +100,7 @@
   <div class="panel d" onclick="scrollToNext()">
     <div class="container">
       <div class="copy">
-        <p class="nav nav-only"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
+
       </div> 
     </div>  
   </div> 
@@ -113,7 +111,6 @@
     <div class="container">
       <div class="copy">
         <p><a href="#" onclick="scrollToNext()">After removing the lid, the Message Box replays the voice recordings of your past.</a></p>
-        <p class="nav"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
        </div> 
     </div>  
   </div>  
@@ -122,7 +119,6 @@
     <div class="container">
       <div class="copy">
        <p><a href="#" onclick="scrollToNext()">Perhaps the laugh of an old roommate, an argument with an ex-partner or loud voices from a house party</a></p>
-        <p class="nav"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
       </div> 
     </div>  
   </div>  
@@ -131,8 +127,7 @@
     <div class="container">
       <div class="copy">
         <p><a href="#" onclick="scrollToNext()">These random memories might make you smile, perhaps with a hint of nostalgia. </a></p>
-        <p class="second"><a href="#" onclick="scrollToNext()">An encounter with one of these unexpected past moments could inspire you to change your future. </a></p>
-        <p class="nav"><a href="#" onclick="scrollToPrevious()"><i class="fa fa-long-arrow-left"></i> <a href="#" onclick="scrollToNext()"><i class="fa fa-long-arrow-right"></i></a></p>
+        <p class="second"><a href="#" onclick="scrollToNext()">But an encounter with these unexpected moment could change your future.</a></p>
       </div> 
     </div>  
   </div>  
@@ -140,18 +135,22 @@
   <div class="f info static" >
     <div class="scroll-container">
       <div class="container">
-
-        <p><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_5.jpg" alt="tech" /></p>
+		<h1>About the Message Box</h1>
+        <p><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_techB.jpg"></p>
         
-        <h1>Design</h1>
+        <h2>Design</h2>
         <p>We designed the Message Box as a reinterpretation of music boxes, those small mysterious trinkets that play a nostalgic melody whenever opened. We were interested in the motivation for interaction with this traditional object. A music box does not serve a specific purpose. Yet we still interact with the object, and its design is powerful enough to evoke nostalgia and trigger old memories. We harnessed this same power in our concept of Message Box.</p>
         <p>Message Box is a design experiment with time and memory. It is an exploration of a long-term interaction with an object, employing technology to subtly enrich the ordinary aspects of our everyday lives.</p>
         
-        <h1>Technology</h1>
+        <h2>Technology</h2>
         <p>The object is composed of two pieces: a base made of fabric and metal, produced in the same way as a lamp shade, and a sanded glass dome, serving as a lid for the object. Inside the base is a Raspberry Pi, an inexpensive Linux computer, which is programmed to detect, record and store voices from its surroundings. When the user removes the lid and rests his ear on the top of the structure's cone, this triggers a touch sensor which signals the computer to play back a random voice snippet from its memory.</p>
 
+        <p><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_5.jpg" alt="opened message box" /></p>
+        
+        
         <div class="footer">
-          <p>Designed by <a href="http://orgonomyproductions.info" target="_blank">Leonardo Amico</a> & <a href="http://ryu-yamamoto.com" target="_blank">Ryu Yamamoto</a>. Website by <a href="http://www.sarahriazati.com" target="_blank">Sarah Riazati</a>. Photographs by <a href="http://www.shekpokwan.com" target="_blank">Shek Po Kwan</a>. <br />&copy; Fabrica 2015.</p>
+          <p>Designed by <a href="http://orgonomyproductions.info" target="_blank">Leonardo Amico</a> & <a href="http://ryu-yamamoto.com" target="_blank">Ryu Yamamoto</a>. Website by <a href="http://www.sarahriazati.com" target="_blank">Sarah Riazati</a>. Photographs by <a href="http://www.shekpokwan.com" target="_blank">Shek Po Kwan</a>. Illustrations by <a href="http://www.ferreolbabin.fr"  target="_blank">Ferr&eacuteol Babin</a>. &copy;  2015.</p>
+          <p><a href="http://www.fabrica.it" target="_blank"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/Fabrica_logo_blk.png" /></a> is a communication research centre. It is based in Treviso, Italy, and is an integral part of the Benetton Group. </p>
         </div>
       </div>
     </div>

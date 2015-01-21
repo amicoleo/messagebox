@@ -86,6 +86,12 @@ $copy-left-spacing: 20px;
 $text-vert-spacing: 2%;
 
 
+nav a.arrow {
+  font-size: 1.5em;
+  display: block;
+  padding-top: 22px;
+}
+
 .panel, nav {
   position: fixed; 
   visibility: hidden; 
@@ -106,22 +112,6 @@ $text-vert-spacing: 2%;
         display: block;
         margin: 15px 0 0 $copy-left-spacing;
         &:first-child {
-          margin-top: $text-vert-spacing;
-        }
-        i {
-          padding-left: 15px;
-        }
-        &.nav { // arrow navigation between panels
-          margin-top: 0;
-          a:first-child i {
-            padding-right: 15px;
-            padding-left: 0 !important;
-          }
-          a:nth-child(2) i {
-            padding-left: 15px;
-          }
-        }
-        &.nav-only { // add spacing when it's only arrows
           margin-top: $text-vert-spacing;
         }
       }
@@ -150,13 +140,6 @@ nav {
     text-align: center;
     width: 100px; 
   }
-  a, i {
-
-
-  }
-  .info-link {
-    
-  }
 }
 
 
@@ -183,11 +166,14 @@ nav {
     @media screen and (max-width: $break-sm) {
       width: 75%;
     }
-    h1, p {
+    h1, h2, p {
       margin: 0 auto 2% auto;
       width: 50%;
     }
     h1 {
+      font-size: 1.5em;
+    }
+    h2 {
       font-size: 1em;
     }
     p {
@@ -197,6 +183,12 @@ nav {
     } 
     .footer {
       font-size: 0.7em;
+      a img { // the lovely fabrica logo
+        height: 20px; 
+        vertical-align: middle; 
+        padding-right: 7px; 
+        margin-bottom: 1px;
+      }
     }
   } 
 }
@@ -213,6 +205,9 @@ body {
   color: $dark;
   font-family: 'circular', helvetica, arial, sans-serif;
   font-weight: 400;
+  @media screen and (max-width: $break-sm) {
+    font-size: 12px;
+  }
 }
 
 .header {
@@ -265,6 +260,7 @@ nav {
   background: $dark;
   color: $light;
   @include selection($dark,$light);
+  
   a, i {
     color: $light;
     background: none;
@@ -309,7 +305,7 @@ nav {
 }
 
 .b3 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png); 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3b.png); 
   // z-index: 97;
 }
 
@@ -351,8 +347,9 @@ nav {
 .scroll-container{
   position: absolute; 
   height: 80%; 
-  overflow: hidden; 
+  overflow: hidden; 	
   margin-top: 5%;
+  width: 100%; 
 }
 
 .ps-container{
