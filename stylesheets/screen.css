@@ -312,23 +312,33 @@ nav {
   background: #191e24;
   color: #e5eaee;
 }
-/* line 265, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
+.dark ::selection {
+  color: #191e24;
+  background: #e5eaee;
+}
+/* line 28, ../sass/screen.scss */
+.dark ::-moz-selection {
+  color: #191e24;
+  background: #e5eaee;
+}
+/* line 266, ../sass/screen.scss */
 .dark a, .dark i {
   color: #e5eaee;
   background: none;
 }
-/* line 269, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .dark p.second {
   margin-top: 15% !important;
 }
 
-/* line 274, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .light {
   background: #e5eaee;
   color: #191e24;
 }
 
-/* line 279, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .m-b {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
   background-position: 50%;
@@ -339,7 +349,7 @@ nav {
   background-size: cover;
 }
 
-/* line 286, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .marlene {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
   background-position: 50%;
@@ -350,47 +360,47 @@ nav {
   background-size: cover;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg);
 }
 
-/* line 298, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .b1 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png);
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .b2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png);
 }
 
-/* line 308, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .b3 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3.png);
 }
 
-/* line 313, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .b4 {
   /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
 }
 
-/* line 318, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .c {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg);
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .c2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c2.jpg);
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 .d {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg);
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb {
   background-position: 50%;
   -webkit-background-size: cover;

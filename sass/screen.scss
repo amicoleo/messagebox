@@ -262,6 +262,7 @@ nav {
 .dark {
   background: $dark;
   color: $light;
+  @include selection($dark,$light);
   a, i {
     color: $light;
     background: none;
