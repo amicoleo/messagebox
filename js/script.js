@@ -35,6 +35,10 @@ $(function() {
   $(".info").css("padding-top", $(window).height()*0.1);
   $(".slimScrollBar").css("opacity", "1.0"); 
   $(".slimScrollBar").css("border-radius", "0.0"); 
+  
+  $(".slimScrollRail").css("opacity", "0.8"); 
+  $(".slimScrollRail").css("color", "#000"); 
+  $(".slimScrollRail").css("border-radius", "0.0"); 
   //Initialize section vars
   homeSection = $('.panel').eq(0); 
   currentSection = homeSection; 

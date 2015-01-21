@@ -145,12 +145,15 @@ nav {
     padding-top: 20px;
     width: auto;
     right: 0;
+    text-align: center;
+    width: 100px; 
   }
   a, i {
-    padding: $copy-left-spacing;
+
+
   }
   .info-link {
-    text-align: center;
+    
   }
 }
 
