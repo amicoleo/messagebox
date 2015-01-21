@@ -28,16 +28,15 @@ $(function() {
     height: $(window).height()*0.8, 
     width: $(window).width()*0.8, 
     alwaysVisible: true, 
-    railVisible: true,
-    railColor: '#000000aa'
+    railVisible: true
   })
   $(".info").css("padding-left", "10%"); 
   $(".info").css("padding-top", $(window).height()*0.1);
   $(".slimScrollBar").css("opacity", "1.0"); 
   $(".slimScrollBar").css("border-radius", "0.0"); 
   
-  $(".slimScrollRail").css("opacity", "0.8"); 
-  $(".slimScrollRail").css("color", "#000"); 
+  $(".slimScrollRail").css("opacity", "0.1"); 
+  $(".slimScrollRail").css("background-color", "#000"); 
   $(".slimScrollRail").css("border-radius", "0.0"); 
   //Initialize section vars
   homeSection = $('.panel').eq(0); 
