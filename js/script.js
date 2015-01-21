@@ -28,6 +28,8 @@ $(function() {
     height: $(window).height()*0.8, 
     width: $(window).width()*0.8, 
     alwaysVisible: true, 
+    railVisible: true,
+    railColor: '#000000aa'
   })
   $(".info").css("padding-left", "10%"); 
   $(".info").css("padding-top", $(window).height()*0.1);
