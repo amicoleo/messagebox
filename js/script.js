@@ -45,7 +45,7 @@ function showInfo(){
     $(".info-link").css("opacity", "0.0"); 
     $(".info-link").removeAttr("href");  
     $(".info").animate({
-      "margin-top": "0%"
+      "top": "0%"
       }, infoRaisingTime, function(){
       infoToggle = true; 
       panelTransition = false; 
@@ -63,7 +63,7 @@ function showInfo(){
     $(".info-link").removeAttr("href");  
     setLocationHash("");
     $(".info").animate({
-      "margin-top": "100%"
+      "top": "100%"
       }, infoRaisingTime, function(){
         infoToggle = false; 
         panelTransition = false; 
@@ -273,6 +273,11 @@ window.onhashchange = function(e) {
 
 window.onresize = function(){
   $(".scroll-container").perfectScrollbar("update");
+  var pos = $(".info p").position(); 
+  var xPos = pos.left; 
+  var off = $(window).width() - ($(".info p").width()+xPos);
+  var strOff = off+"px";  
+  $(".ps-scrollbar-y-rail").css("right", strOff); 
 }
 
 $(".scroll-container").scroll(function(){
