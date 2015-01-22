@@ -333,15 +333,16 @@ nav {
 /* line 268, ../sass/screen.scss */
 .dark p.second {
   margin-top: 15% !important;
+  opacity: 0;
 }
 
-/* line 273, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .light {
   background: #e5eaee;
   color: #191e24;
 }
 
-/* line 278, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .m-b {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
   background-position: 50%;
@@ -352,7 +353,7 @@ nav {
   background-size: cover;
 }
 
-/* line 285, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .marlene {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
   background-position: 50%;
@@ -363,47 +364,47 @@ nav {
   background-size: cover;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg);
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .b1 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch1.png);
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .b2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch2.png);
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .b3 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b-sketch3b.png);
 }
 
-/* line 312, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .b4 {
   /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .c {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg);
 }
 
-/* line 322, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .c2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c2.jpg);
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .d {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg);
 }
 
-/* line 340, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb {
   background-position: 50%;
   -webkit-background-size: cover;
@@ -413,7 +414,7 @@ nav {
   background-size: cover;
 }
 
-/* line 347, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .scroll-container {
   position: absolute;
   height: 80%;
@@ -422,7 +423,7 @@ nav {
   width: 100%;
 }
 
-/* line 356, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .ps-container .ps-scrollbar-y-rail {
   position: absolute;
   right: 25%;
@@ -430,7 +431,7 @@ nav {
   background-color: rgba(25, 30, 36, 0.1);
   margin-right: -20px;
 }
-/* line 363, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .ps-container .ps-scrollbar-y {
   position: absolute;
   width: 8px;

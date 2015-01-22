@@ -6,6 +6,7 @@ var currentSection, homeSection;
 var mouseWheelTransition = false; 
 var panelTransition = false; 
 var reachedTopOfInfo = true;
+bReachedLastText = false; 
 
 //Constants
 var fadeTime = 1000; 
@@ -86,7 +87,16 @@ function scrollToNext () {
 
     //If we are in the section before info
     if (currentSection.hasClass("e3") && !infoToggle){
-      showInfo();
+      if (!bReachedLastText){
+        $(".e3 .second").animate({
+            opacity: 1.0
+            }, fadeTime, function(){
+              bReachedLastText = true; 
+            });
+      }else{
+        showInfo();
+      }
+
     }else if (!infoToggle){
       $('.panel').each(function(i, div){ // loop through article headings
         if ($(div).attr("class") == currentSection.attr("class")){
@@ -142,6 +152,15 @@ function scrollToPrevious () {
     //If we are in the section before info
     if (infoToggle){
       showInfo();
+
+
+    }else if (currentSection.hasClass("e3") && bReachedLastText){
+      $(".e3 .second").animate({
+        opacity: 0.0
+        }, fadeTime, function(){
+          bReachedLastText = false; 
+        });
+
     }else{
       $('.panel').each(function(i, div){ // loop through article headings
         if ($(div).attr("class") == currentSection.attr("class")){
