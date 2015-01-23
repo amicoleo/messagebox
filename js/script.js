@@ -237,20 +237,30 @@ if (document.addEventListener) {
 // IE 6/7/8
 else document.attachEvent("onmousewheel", MouseWheelHandler);
 
+var mouseWheelTimeOut; 
 function MouseWheelHandler(e) {
   e.preventDefault(); 
   // cross-browser wheel delta
   var e = window.event || e; // old IE support
   var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
-  if (!mouseWheelTransition){
-    mouseWheelTransition = true; 
-    if (delta == -1)
-      scrollToNext(); 
-    if (delta == 1)
-      scrollToPrevious(); 
+  window.clearTimeout(mouseWheelTimeOut);
+  mouseWheelTimeOut = window.setTimeout(resetMouseWheelTransition, 100); 
+  if (!infoToggle){
+    if (!mouseWheelTransition){
+      if (delta == -1)
+        scrollToNext(); 
+      if (delta == 1)
+        scrollToPrevious(); 
+    }
   }
+  mouseWheelTransition = true; 
 
+}
+
+function resetMouseWheelTransition(){
+  mouseWheelTransition = false; 
+  console.log("Reset m w t"); 
 }
 
 
