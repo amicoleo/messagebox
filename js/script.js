@@ -245,7 +245,7 @@ function MouseWheelHandler(e) {
   var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
   window.clearTimeout(mouseWheelTimeOut);
-  mouseWheelTimeOut = window.setTimeout(resetMouseWheelTransition, 100); 
+  mouseWheelTimeOut = window.setTimeout(resetMouseWheelTransition, 20); 
   if (!infoToggle){
     if (!mouseWheelTransition){
       if (delta == -1)
@@ -260,7 +260,6 @@ function MouseWheelHandler(e) {
 
 function resetMouseWheelTransition(){
   mouseWheelTransition = false; 
-  console.log("Reset m w t"); 
 }
 
 //On touch scroll
