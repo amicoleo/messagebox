@@ -283,11 +283,6 @@ window.onhashchange = function(e) {
 
 window.onresize = function(){
   $(".scroll-container").perfectScrollbar("update");
-  var pos = $(".info p").position(); 
-  var xPos = pos.left; 
-  var off = $(window).width() - ($(".info p").width()+xPos);
-  var strOff = off+"px";  
-  $(".ps-scrollbar-y-rail").css("right", strOff); 
 }
 
 $(".scroll-container").scroll(function(){
