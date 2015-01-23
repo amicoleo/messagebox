@@ -114,10 +114,14 @@ function scrollToNext () {
               currentSection.css("visibility", "hidden"); 
               currentSection = nextSection; 
               panelTransition = false; 
-               if (currentSection.hasClass("dark"))
+               if (currentSection.hasClass("dark")){
                 $(".info-link").css("color", "#fff"); 
-              else
+                $(".arrow i").css("color", "#fff"); 
+              }
+              else{
                 $(".info-link").css("color", "#000");
+                $(".arrow i").css("color", "#000");
+              }
             });
 
             if (nextSection.hasClass("b1")){
@@ -178,10 +182,14 @@ function scrollToPrevious () {
               currentSection.css("visibility", "hidden"); 
               currentSection = nextSection; 
               panelTransition = false; 
-               if (currentSection.hasClass("dark"))
+               if (currentSection.hasClass("dark")){
                 $(".info-link").css("color", "#fff"); 
-              else
+                $(".arrow i").css("color", "#fff"); 
+              }
+              else{
                 $(".info-link").css("color", "#000");
+                $(".arrow i").css("color", "#000");
+              }
             });
 
             if (currentSection.hasClass("b1")){
@@ -245,7 +253,7 @@ function MouseWheelHandler(e) {
   var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
   window.clearTimeout(mouseWheelTimeOut);
-  mouseWheelTimeOut = window.setTimeout(resetMouseWheelTransition, 20); 
+  mouseWheelTimeOut = window.setTimeout(resetMouseWheelTransition, 2-0); 
   if (!infoToggle){
     if (!mouseWheelTransition){
       if (delta == -1)
