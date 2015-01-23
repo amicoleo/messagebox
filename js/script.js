@@ -263,6 +263,34 @@ function resetMouseWheelTransition(){
   console.log("Reset m w t"); 
 }
 
+//On touch scroll
+document.addEventListener("touchmove", handleMove, false);
+document.addEventListener("touchend", handleEnd, false);
+ 
+var bTouchScrolling = false;
+var scrollingStartY;
+function handleMove(event) {
+  //start of scroll event for iOS
+  event.preventDefault();
+  var touches = event.changedTouches;
+   if (!bTouchScrolling){
+    bTouchScrolling = true;
+    scrollingStartY = touches[0].pageY;
+  }
+}
+ 
+function handleEnd(event) {
+  //start of scroll event for iOS
+  var touches = event.changedTouches;
+  if (bTouchScrolling){
+    bTouchScrolling = false;
+    if (touches[0].pageY > scrollingStartY)
+      scrollToPrevious();
+    else
+      scrollToNext();
+  }
+}
+
 
 //Hash navigation 
 function getLocationHash(){
