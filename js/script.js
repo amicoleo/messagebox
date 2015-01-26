@@ -279,22 +279,26 @@ var scrollingStartY;
 function handleMove(event) {
   //start of scroll event for iOS
   event.preventDefault();
-  var touches = event.changedTouches;
-   if (!bTouchScrolling){
-    bTouchScrolling = true;
-    scrollingStartY = touches[0].pageY;
+  if (!infoToggle){
+    var touches = event.changedTouches;
+     if (!bTouchScrolling){
+      bTouchScrolling = true;
+      scrollingStartY = touches[0].pageY;
+    }
   }
 }
  
 function handleEnd(event) {
   //start of scroll event for iOS
   var touches = event.changedTouches;
-  if (bTouchScrolling){
-    bTouchScrolling = false;
-    if (touches[0].pageY > scrollingStartY)
-      scrollToPrevious();
-    else
-      scrollToNext();
+  if (!infoToggle){
+    if (bTouchScrolling){
+      bTouchScrolling = false;
+      if (touches[0].pageY > scrollingStartY)
+        scrollToPrevious();
+      else
+        scrollToNext();
+    }
   }
 }
 
