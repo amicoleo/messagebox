@@ -63,7 +63,7 @@ function showInfo(){
     $(".info-link").removeAttr("href");  
     setLocationHash("");
     $(".info").animate({
-      "top": "100%"
+      "top": "102%"
       }, infoRaisingTime, function(){
         infoToggle = false; 
         panelTransition = false; 
