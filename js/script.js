@@ -41,11 +41,13 @@ $(function() {
 function showInfo(){
   if (!infoToggle){
     setLocationHash("info");
-    $(".info-link").css("opacity", "0.0"); 
     $(".info-link").removeAttr("href");  
+
     $(".info").animate({
       "top": "0%"
       }, infoRaisingTime, function(){
+      $('.arrow').css("display", "none"); 
+      $('.info-link').css("display", "block"); 
       infoToggle = true; 
       panelTransition = false; 
       $(".info-link").html('<i class="fa fa-times"></i>');
@@ -57,17 +59,18 @@ function showInfo(){
 
     );
     });
+
   }else{
-    $(".info-link").css("opacity", "0.0"); 
     $(".info-link").removeAttr("href");  
     setLocationHash("");
     $(".info").animate({
       "top": "102%"
       }, infoRaisingTime, function(){
+        $('.arrow').css("display", "block"); 
         infoToggle = false; 
         panelTransition = false; 
         $(".info-link").html('info');
-        $(".info-link").animate({
+        $(".arrow").animate({
         opacity: 1.0
         }, infoRaisingTime, 
           function(){
@@ -75,6 +78,9 @@ function showInfo(){
           }
       );
     });
+
+    // $('.info-link').animate({
+    //   opacity: 0.0}, infoRaisingTime); 
   }
   
 }
