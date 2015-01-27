@@ -80,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #191e24;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 body, html {
   padding: 0;
   margin: 0;
@@ -89,53 +89,46 @@ body, html {
   background: #FFF;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 img {
   max-width: 100%;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 a, i {
   color: #191e24;
   text-decoration: none;
 }
-/* line 53, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 a:hover, i:hover {
   color: #191e24;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 body {
   background: #FFF;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 #wrapper {
   max-width: 2000px;
   margin: 0 auto;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 section {
   width: 100%;
   height: 800px;
   padding: 0;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 89, ../sass/screen.scss */
-nav a.arrow {
-  font-size: 1.5em;
-  display: block;
-  padding-top: 22px;
-}
-
-/* line 95, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .panel, .m-b, .marlene, nav {
   position: fixed;
   visibility: hidden;
@@ -144,37 +137,37 @@ nav a.arrow {
   width: 100%;
   max-width: 2000px;
 }
-/* line 102, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .panel .container, .m-b .container, .marlene .container, nav .container {
   position: absolute;
   width: 100%;
 }
-/* line 105, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .panel .container .copy, .m-b .container .copy, .marlene .container .copy, nav .container .copy {
   display: block;
 }
-/* line 107, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .panel .container .copy h1, .m-b .container .copy h1, .marlene .container .copy h1, nav .container .copy h1 {
   max-width: 60% !important;
 }
-/* line 110, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .panel .container .copy h1, .m-b .container .copy h1, .marlene .container .copy h1, .panel .container .copy p, .m-b .container .copy p, .marlene .container .copy p, nav .container .copy h1, nav .container .copy p {
   max-width: 40%;
   display: block;
-  margin: 15px 0 0 20px;
+  margin-left: 20px;
 }
-/* line 114, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .panel .container .copy h1:first-child, .m-b .container .copy h1:first-child, .marlene .container .copy h1:first-child, .panel .container .copy p:first-child, .m-b .container .copy p:first-child, .marlene .container .copy p:first-child, nav .container .copy h1:first-child, nav .container .copy p:first-child {
   margin-top: 2%;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .header, nav {
   visibility: visible;
   opacity: 1.0;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 nav {
   top: 2%;
   text-align: right;
@@ -182,16 +175,25 @@ nav {
   width: auto;
   right: 0;
 }
-/* line 136, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 nav .container {
-  padding-top: 20px;
+  /*     padding-top: 20px; */
   width: auto;
   right: 0;
   text-align: center;
   width: 100px;
 }
+/* line 134, ../sass/screen.scss */
+nav a {
+  padding-bottom: 22px;
+  display: block;
+}
+/* line 137, ../sass/screen.scss */
+nav a i {
+  font-size: 1.5em !important;
+}
 
-/* line 147, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .info {
   position: fixed;
   top: 102%;
@@ -203,45 +205,53 @@ nav .container {
   visibility: visible;
   background-color: #fff;
 }
-/* line 158, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .info .spacer {
   height: 10%;
 }
-/* line 163, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .info .container {
   position: static;
   margin: 0 auto;
 }
-@media screen and (max-width: 750px) {
-  /* line 163, ../sass/screen.scss */
+@media screen and (max-width: 760px) {
+  /* line 159, ../sass/screen.scss */
   .info .container {
     width: 75%;
   }
 }
-/* line 169, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .info .container h1, .info .container h2, .info .container p {
   margin: 0 auto 2% auto;
   width: 50%;
 }
-/* line 173, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .info .container h1 {
   font-size: 1.5em;
 }
-/* line 176, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .info .container h2 {
   font-size: 1em;
 }
-/* line 179, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .info .container p {
   font-size: 1.3em;
   line-height: 1.3em;
   font-weight: 400;
 }
-/* line 184, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .info .container .footer {
   font-size: 0.7em;
 }
-/* line 186, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
+.info .container .footer a {
+  text-decoration: none;
+}
+/* line 184, ../sass/screen.scss */
+.info .container .footer a:hover {
+  text-decoration: underline;
+}
+/* line 188, ../sass/screen.scss */
 .info .container .footer a img {
   height: 20px;
   vertical-align: middle;
@@ -249,68 +259,81 @@ nav .container {
   margin-bottom: 1px;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 body {
   font-size: 16px;
   color: #191e24;
   font-family: 'circular', helvetica, arial, sans-serif;
   font-weight: 400;
 }
-@media screen and (max-width: 750px) {
-  /* line 203, ../sass/screen.scss */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5), screen and (max-width: 760px) {
+  /* line 205, ../sass/screen.scss */
   body {
     font-size: 12px;
   }
+  /* line 215, ../sass/screen.scss */
+  body nav {
+    font-size: 200%;
+    /* 
+          width: auto;
+          a {
+            padding: 35px 22px;
+            &:first-child {
+              padding-top: 10px;
+            }
+          }
+     */
+  }
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .header h1 {
   font-size: 3em;
 }
-/* line 216, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .header h1 i {
   font-size: .8em;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 nav a {
   color: #191e24;
   text-transform: uppercase;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .dark .container .copy p {
   max-width: 70%;
   font-size: 3em;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .panel p, .m-b p, .marlene p {
   font-size: 2em;
   line-height: 1.2em;
 }
-/* line 237, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .panel p i, .m-b p i, .marlene p i {
   font-size: 0.8em;
 }
 
-/* line 242, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .info {
   text-align: left;
   font-size: .8em;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 footer {
   font-size: 80%;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 nav {
   z-index: 102;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .dark {
   background: #191e24;
   color: #e5eaee;
@@ -325,24 +348,24 @@ nav {
   color: #191e24;
   background: #e5eaee;
 }
-/* line 264, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .dark a, .dark i {
   color: #e5eaee;
   background: none;
 }
-/* line 268, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .dark p.second {
   margin-top: 15% !important;
   opacity: 0;
 }
 
-/* line 274, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .light {
   background: #e5eaee;
   color: #191e24;
 }
 
-/* line 279, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .m-b {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
   background-position: 50%;
@@ -353,7 +376,7 @@ nav {
   background-size: cover;
 }
 
-/* line 286, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .marlene {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
   background-position: 50%;
@@ -364,47 +387,47 @@ nav {
   background-size: cover;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg);
 }
 
-/* line 298, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .b1 {
   background: url(../img/mb_b-sketch1.png);
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .b2 {
   background: url(../img/mb_b-sketch2.png);
 }
 
-/* line 308, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .b3 {
   background: url(../img/mb_b-sketch3b.png);
 }
 
-/* line 313, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .b4 {
   /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
 }
 
-/* line 318, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .c {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg);
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 .c2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c2.jpg);
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .d {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg);
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb {
   background-position: 50%;
   -webkit-background-size: cover;
@@ -414,7 +437,7 @@ nav {
   background-size: cover;
 }
 
-/* line 348, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .scroll-container {
   position: absolute;
   height: 80%;
@@ -423,7 +446,7 @@ nav {
   width: 100%;
 }
 
-/* line 357, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .ps-container .ps-scrollbar-y-rail {
   position: absolute;
   right: 25%;
@@ -431,7 +454,7 @@ nav {
   background-color: rgba(25, 30, 36, 0.1);
   margin-right: -20px;
 }
-/* line 364, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .ps-container .ps-scrollbar-y {
   position: absolute;
   width: 8px;

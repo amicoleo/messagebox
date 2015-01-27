@@ -14,7 +14,7 @@ $dark-alpha: rgba(25,30,36, 0.1);
 $light: rgb(229,234,238);
 
 $break-med: 1000px;
-$break-sm: 750px;
+$break-sm: 760px;
 
 
 @mixin vendorize($property, $value) {
@@ -30,7 +30,6 @@ $break-sm: 750px;
   ::-moz-selection {color: $color;background: $background;}
 }
 
-
 //  basics
 @include selection($light,$dark);
 
@@ -42,7 +41,6 @@ body, html {
   background: #FFF;
 }
 
-// div, a, p.button, img, li {@include vendorize(transition, $transition);}
 img {
   max-width: 100%;
 }
@@ -68,12 +66,11 @@ body {
   margin: 0 auto;
 }
 
-// forces heights 
+
 section {
   width: 100%;
   height: 800px;
   padding: 0; 
-  // padding: 55vh 0;
 }
 
 .container {
@@ -85,12 +82,6 @@ section {
 $copy-left-spacing: 20px;
 $text-vert-spacing: 2%;
 
-
-nav a.arrow {
-  font-size: 1.5em;
-  display: block;
-  padding-top: 22px;
-}
 
 .panel, nav {
   position: fixed; 
@@ -110,7 +101,7 @@ nav a.arrow {
       h1, p {
         max-width: 40%;
         display: block;
-        margin: 15px 0 0 $copy-left-spacing;
+        margin-left: $copy-left-spacing;
         &:first-child {
           margin-top: $text-vert-spacing;
         }
@@ -134,14 +125,20 @@ nav {
   width: auto;
   right: 0;
   .container { 
-    padding-top: 20px;
+/*     padding-top: 20px; */
     width: auto;
     right: 0;
     text-align: center;
     width: 100px; 
   }
+  a {
+    padding-bottom: 22px;
+    display: block;
+    i {
+      font-size: 1.5em !important; //
+    }
+  }
 }
-
 
 
 .info {
@@ -158,7 +155,6 @@ nav {
   .spacer{
     height: 10%; 
   }
-
 
   .container {
     position: static; 
@@ -183,6 +179,12 @@ nav {
     } 
     .footer {
       font-size: 0.7em;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
       a img { // the lovely fabrica logo
         height: 20px; 
         vertical-align: middle; 
@@ -205,10 +207,28 @@ body {
   color: $dark;
   font-family: 'circular', helvetica, arial, sans-serif;
   font-weight: 400;
-  @media screen and (max-width: $break-sm) {
+  @media screen and (-webkit-min-device-pixel-ratio : 1.5),
+    screen and (min-device-pixel-ratio : 1.5), 
+    screen and (max-width: $break-sm) 
+  {
     font-size: 12px;
+    nav {
+      font-size: 200%;
+/* 
+      width: auto;
+      a {
+        padding: 35px 22px;
+        &:first-child {
+          padding-top: 10px;
+        }
+      }
+ */
+    }
   }
 }
+
+
+
 
 .header {
   h1 {
@@ -247,7 +267,6 @@ nav {
 footer {
   font-size: 80%;
 }
-
 
 
 // BACKGROUNDZ & STACKING
@@ -292,7 +311,6 @@ nav {
 
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg); 
-  // z-index: 100;
 }
 
 .b1 {
@@ -317,25 +335,14 @@ nav {
 
 .c {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg); 
-  // z-index: 95;
 }
 
 .c2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c2.jpg); 
-  // z-index: 95;
 }
 
 .d {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg); 
-  // z-index: 94;
-}
-
-.e1 {
-  // z-index: 92;
-}
-
-.e2 {
-  // z-index: 91;
 }
 
 .a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb{
