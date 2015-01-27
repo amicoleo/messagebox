@@ -20,9 +20,7 @@ var infoRaisingTime = 1000;
 $(function() {
   //Check if info hash
   if (getLocationHash() == "info")
-    showInfo(); 
-
-  $(".scroll-container").perfectScrollbar();
+    showInfo();   
 
   //Initialize section vars
   homeSection = $('.panel').eq(0); 
@@ -37,6 +35,7 @@ $(function() {
           }
       });
   }
+  
 });
 
 function showInfo(){
@@ -253,7 +252,7 @@ function MouseWheelHandler(e) {
   var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
   window.clearTimeout(mouseWheelTimeOut);
-  mouseWheelTimeOut = window.setTimeout(resetMouseWheelTransition, 2-0); 
+  mouseWheelTimeOut = window.setTimeout(resetMouseWheelTransition, 20); 
   if (!infoToggle){
     if (!mouseWheelTransition){
       if (delta == -1)
@@ -342,3 +341,7 @@ function setCurrentPanelFromHash(){
     }
   }
 }
+
+var imgLoad = imagesLoaded( $(document), function( instance ) {
+    $(".scroll-container").perfectScrollbar();
+}); 
