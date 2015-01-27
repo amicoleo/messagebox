@@ -79,6 +79,43 @@ function showInfo(){
   
 }
 
+// key press 4 down
+function goHome () {
+  if (!panelTransition){
+  
+  if (!infoToggle){
+      $('.panel').each(function(i, div){ // loop through article headings
+        if ($(div).attr("class") == currentSection.attr("class")){
+          if (i < $('.panel').length -1){
+            panelTransition = true; 
+            var nextSection = $('.panel').eq(0); //Next section is home. So panel 0
+            nextSection.css("visibility", "visible");
+            nextSection.animate({
+            opacity: 1.0
+            }, fadeTime);
+
+            $(div).animate({
+              opacity: 0.0
+            }, fadeTime, function(){
+              currentSection.css("visibility", "hidden"); 
+              currentSection = nextSection; 
+              panelTransition = false; 
+               if (currentSection.hasClass("dark")){
+                $(".info-link").css("color", "#fff"); 
+                $(".arrow i").css("color", "#fff"); 
+              }
+              else{
+                $(".info-link").css("color", "#000");
+                $(".arrow i").css("color", "#000");
+              }
+            });
+          }
+        }
+      });
+    }
+  }
+}
+
 
 // key press 4 down
 function scrollToNext () {
