@@ -2,6 +2,13 @@ TODO LIST
 ========
 
 
+- Fix menu resizing on small screens
+- Scrolling info panel on iPhones
+- 
+
+
+
+
 - image of marlene shouldn't reload 
 - image of the message box in the first frames shouldn't reload
 
