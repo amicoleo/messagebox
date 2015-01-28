@@ -231,10 +231,12 @@ function scrollToPrevious () {
                if (currentSection.hasClass("dark")){
                 $(".info-link").css("color", "#fff"); 
                 $(".arrow i").css("color", "#fff"); 
+                $(".arrow").css("color", "#fff");
               }
               else{
                 $(".info-link").css("color", "#000");
                 $(".arrow i").css("color", "#000");
+                $(".arrow").css("color", "#000");
               }
             });
 
