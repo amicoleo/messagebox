@@ -152,6 +152,8 @@ nav {
   visibility: visible; 
   background-color: #fff; 
 
+
+
   .spacer{
     height: 10%; 
   }
@@ -349,6 +351,12 @@ nav {
   background-position: 50%;
   @include vendorize(background-size,cover);
 }
+
+  .fabrica-logo{
+    width: 30%; 
+    max-width: 120px;
+    height: auto !important; 
+  }
 
 //Scroll
 
