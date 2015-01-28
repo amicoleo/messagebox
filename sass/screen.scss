@@ -99,7 +99,7 @@ $text-vert-spacing: 2%;
         max-width: 60% !important;
       }
       h1, p {
-        max-width: 40%;
+        max-width: 60%;
         display: block;
         margin-left: $copy-left-spacing;
         &:first-child {
@@ -164,7 +164,7 @@ nav {
     }
     h1, h2, p {
       margin: 0 auto 2% auto;
-      width: 50%;
+      width: 70%;
     }
     h1 {
       font-size: 1.5em;
@@ -200,7 +200,7 @@ nav {
 
 // typography
 
-$bigtext: 3em;
+$bigtext: 2.5em;
 
 body {
   font-size: 16px;
@@ -211,7 +211,7 @@ body {
     screen and (min-device-pixel-ratio : 1.5), 
     screen and (max-width: $break-sm) 
   {
-    font-size: 12px;
+    font-size: 10px;
     nav {
       font-size: 200%;
 /* 
@@ -247,7 +247,7 @@ nav {
 }
 
 .dark .container .copy p {
-  max-width: 70%;
+  max-width: 65%;
   font-size: $bigtext;
 }
 

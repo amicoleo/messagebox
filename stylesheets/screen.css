@@ -152,7 +152,7 @@ section {
 }
 /* line 101, ../sass/screen.scss */
 .panel .container .copy h1, .m-b .container .copy h1, .marlene .container .copy h1, .panel .container .copy p, .m-b .container .copy p, .marlene .container .copy p, nav .container .copy h1, nav .container .copy p {
-  max-width: 40%;
+  max-width: 60%;
   display: block;
   margin-left: 20px;
 }
@@ -223,7 +223,7 @@ nav a i {
 /* line 165, ../sass/screen.scss */
 .info .container h1, .info .container h2, .info .container p {
   margin: 0 auto 2% auto;
-  width: 50%;
+  width: 70%;
 }
 /* line 169, ../sass/screen.scss */
 .info .container h1 {
@@ -269,7 +269,7 @@ body {
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5), screen and (max-width: 760px) {
   /* line 205, ../sass/screen.scss */
   body {
-    font-size: 12px;
+    font-size: 10px;
   }
   /* line 215, ../sass/screen.scss */
   body nav {
@@ -288,7 +288,7 @@ body {
 
 /* line 234, ../sass/screen.scss */
 .header h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 /* line 236, ../sass/screen.scss */
 .header h1 i {
@@ -303,8 +303,8 @@ nav a {
 
 /* line 249, ../sass/screen.scss */
 .dark .container .copy p {
-  max-width: 70%;
-  font-size: 3em;
+  max-width: 65%;
+  font-size: 2.5em;
 }
 
 /* line 254, ../sass/screen.scss */

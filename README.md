@@ -3,8 +3,15 @@ TODO LIST
 
 
 - Fix menu resizing on small screens
-- Scrolling info panel on iPhones
-- 
+- Scrolling info panel on iPhones - clunky 
+- Credit links on info panel. Impossible to touch
+
+- mobile 
+	- text is not a link
+	- background is not a link 
+
+	because it's easy to mistake with scrolling on the screen
+
 
 
 
