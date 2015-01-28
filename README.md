@@ -2,7 +2,10 @@ TODO LIST
 ========
 
 
-- Fix menu resizing on small screens
+- Fix menu resizing on small screens - OK
+- Fix texts on small screens - OK
+
+
 - Scrolling info panel on iPhones - clunky 
 - Credit links on info panel. Impossible to touch
 
