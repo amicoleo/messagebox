@@ -1,6 +1,7 @@
 TODO LIST
 ========
 
+- Info p on 50% on big screen
 
 - Fix menu resizing on small screens - OK
 - Fix texts on small screens - OK
