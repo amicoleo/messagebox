@@ -161,12 +161,10 @@ nav {
   .container {
     position: static; 
     margin: 0 auto;
-    @media screen and (max-width: $break-sm) {
-      width: 75%;
-    }
+    
     h1, h2, p {
       margin: 0 auto 2% auto;
-      width: 70%;
+      width: 50%;
     }
     h1 {
       font-size: 1.5em;
@@ -179,6 +177,14 @@ nav {
       line-height: 1.3em;
       font-weight: 400;
     } 
+
+    @media screen and (max-width: $break-sm) {
+      width: 75%;
+      h1, h2, p {
+        width: 70%;
+      }
+    }
+    
     .footer {
       font-size: 0.7em;
       a {

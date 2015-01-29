@@ -214,44 +214,48 @@ nav a i {
   position: static;
   margin: 0 auto;
 }
-@media screen and (max-width: 760px) {
-  /* line 161, ../sass/screen.scss */
-  .info .container {
-    width: 75%;
-  }
-}
-/* line 167, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .info .container h1, .info .container h2, .info .container p {
   margin: 0 auto 2% auto;
-  width: 70%;
+  width: 50%;
 }
-/* line 171, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .info .container h1 {
   font-size: 1.5em;
 }
-/* line 174, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .info .container h2 {
   font-size: 1em;
 }
-/* line 177, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .info .container p {
   font-size: 1.3em;
   line-height: 1.3em;
   font-weight: 400;
 }
-/* line 182, ../sass/screen.scss */
+@media screen and (max-width: 760px) {
+  /* line 161, ../sass/screen.scss */
+  .info .container {
+    width: 75%;
+  }
+  /* line 183, ../sass/screen.scss */
+  .info .container h1, .info .container h2, .info .container p {
+    width: 70%;
+  }
+}
+/* line 188, ../sass/screen.scss */
 .info .container .footer {
   font-size: 0.7em;
 }
-/* line 184, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .info .container .footer a {
   text-decoration: none;
 }
-/* line 186, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .info .container .footer a:hover {
   text-decoration: underline;
 }
-/* line 190, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .info .container .footer a img {
   height: 20px;
   vertical-align: middle;
@@ -259,7 +263,7 @@ nav a i {
   margin-bottom: 1px;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 body {
   font-size: 16px;
   color: #191e24;
@@ -267,11 +271,11 @@ body {
   font-weight: 400;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5), screen and (max-width: 760px) {
-  /* line 207, ../sass/screen.scss */
+  /* line 213, ../sass/screen.scss */
   body {
     font-size: 10px;
   }
-  /* line 217, ../sass/screen.scss */
+  /* line 223, ../sass/screen.scss */
   body nav {
     font-size: 200%;
     /* 
@@ -286,54 +290,54 @@ body {
   }
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .header h1 {
   font-size: 2.5em;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .header h1 i {
   font-size: .8em;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 nav a {
   color: #191e24;
   text-transform: uppercase;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .dark .container .copy p {
   max-width: 65%;
   font-size: 2.5em;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .panel p, .m-b p, .marlene p {
   font-size: 2em;
   line-height: 1.2em;
 }
-/* line 259, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .panel p i, .m-b p i, .marlene p i {
   font-size: 0.8em;
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .info {
   text-align: left;
   font-size: .8em;
 }
 
-/* line 269, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 footer {
   font-size: 80%;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 nav {
   z-index: 102;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .dark {
   background: #191e24;
   color: #e5eaee;
@@ -348,24 +352,24 @@ nav {
   color: #191e24;
   background: #e5eaee;
 }
-/* line 285, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .dark a, .dark i {
   color: #e5eaee;
   background: none;
 }
-/* line 289, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .dark p.second {
   margin-top: 15% !important;
   opacity: 0;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .light {
   background: #e5eaee;
   color: #191e24;
 }
 
-/* line 300, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .m-b {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg);
   background-position: 50%;
@@ -376,7 +380,7 @@ nav {
   background-size: cover;
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .marlene {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg);
   background-position: 50%;
@@ -387,47 +391,47 @@ nav {
   background-size: cover;
 }
 
-/* line 314, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .a {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg);
 }
 
-/* line 318, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .b1 {
   background: url(../img/mb_b-sketch1.png);
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 .b2 {
   background: url(../img/mb_b-sketch2.png);
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .b3 {
   background: url(../img/mb_b-sketch3b.png);
 }
 
-/* line 333, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .b4 {
   /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); */
 }
 
-/* line 338, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .c {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg);
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .c2 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c2.jpg);
 }
 
-/* line 346, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .d {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg);
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb {
   background-position: 50%;
   -webkit-background-size: cover;
@@ -437,14 +441,14 @@ nav {
   background-size: cover;
 }
 
-/* line 355, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .fabrica-logo {
   width: 30%;
   max-width: 120px;
   height: auto !important;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .scroll-container {
   position: absolute;
   height: 80%;
@@ -453,7 +457,7 @@ nav {
   width: 100%;
 }
 
-/* line 372, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .ps-container .ps-scrollbar-y-rail {
   position: absolute;
   right: 25%;
@@ -461,7 +465,7 @@ nav {
   background-color: rgba(25, 30, 36, 0.1);
   margin-right: -20px;
 }
-/* line 379, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .ps-container .ps-scrollbar-y {
   position: absolute;
   width: 8px;
