@@ -184,15 +184,17 @@ nav {
         width: 70%;
       }
     }
+
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
     
     .footer {
       font-size: 0.7em;
-      a {
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+      
       a img { // the lovely fabrica logo
         height: 20px; 
         vertical-align: middle; 
