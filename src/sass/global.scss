@@ -380,10 +380,10 @@ nav {
 .ps-container{
   .ps-scrollbar-y-rail{
     position: absolute; 
-    right: 25%; 
     width: 8px; 
     background-color: $dark-alpha;
-    margin-right: -$copy-left-spacing; 
+    right: $copy-left-spacing; 
+    height: 100%; 
   }
   .ps-scrollbar-y {
     position: absolute; 
