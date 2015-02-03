@@ -297,6 +297,9 @@ nav {
   }
   p.second {
     margin-top: 15% !important;
+    @media screen and (max-width: $break-sm){
+      margin-top: 5% !important;
+    }
     opacity: 0; 
   }
 }
