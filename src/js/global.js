@@ -403,7 +403,3 @@ function setCurrentPanelFromHash(){
     }
   }
 }
-
-var imgLoad = imagesLoaded( $(document), function( instance ) {
-    $(".scroll-container").perfectScrollbar();
-}); 
