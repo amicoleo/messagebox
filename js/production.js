@@ -46,48 +46,54 @@ $(function() {
 });
 
 function showInfo(){
-  if (!infoToggle){
-    setLocationHash("info");
-    $(".info-link").removeAttr("href");  
+  console.log("show info: "+infoToggle); 
+  if (!panelTransition){
+    panelTransition = true; 
+    if (!infoToggle){
+      
+      $(".info-link").removeAttr("href");  
 
-    $(".info").animate({
-      "top": "0%"
-      }, infoRaisingTime, function(){
-      $('.arrow').css("display", "none"); 
-      $('.info-link').css("display", "block"); 
-      infoToggle = true; 
-      panelTransition = false; 
-      $(".info-link").html('<i class="fa fa-times"></i>');
-      $(".info-link").animate({
-      opacity: 1.0
-      }, infoRaisingTime, function(){
-        $(".info-link").attr("href", "#");  
-      }
-
-    );
-    });
-
-  }else{
-    $(".info-link").removeAttr("href");  
-    setLocationHash("");
-    $(".info").animate({
-      "top": "102%"
-      }, infoRaisingTime, function(){
-        $('.arrow').css("display", "block"); 
-        infoToggle = false; 
-        panelTransition = false; 
-        $(".info-link").html('info');
-        $(".arrow").animate({
-        opacity: 1.0
-        }, infoRaisingTime, 
-          function(){
+      $(".info").animate({
+        "top": "0%"
+        }, infoRaisingTime, function(){
+          $('.arrow').css("display", "none"); 
+          $('.info-link').css("display", "block"); 
+          setLocationHash("info");
+          infoToggle = true; 
+          panelTransition = false; 
+          $(".info-link").html('<i class="fa fa-times"></i>');
+          $(".info-link").animate({
+          opacity: 1.0
+          }, infoRaisingTime, function(){
             $(".info-link").attr("href", "#");  
           }
-      );
-    });
 
-    // $('.info-link').animate({
-    //   opacity: 0.0}, infoRaisingTime); 
+      );
+      });
+
+    }else{
+      $(".info-link").removeAttr("href");  
+      
+      $(".info").animate({
+        "top": "102%"
+        }, infoRaisingTime, function(){
+          $('.arrow').css("display", "block"); 
+          setLocationHash("");
+          infoToggle = false; 
+          panelTransition = false; 
+          $(".info-link").html('info');
+          $(".arrow").animate({
+          opacity: 1.0
+          }, infoRaisingTime, 
+            function(){
+              $(".info-link").attr("href", "#");  
+            }
+        );
+      });
+
+      // $('.info-link').animate({
+      //   opacity: 0.0}, infoRaisingTime); 
+    }
   }
   
 }
@@ -96,7 +102,7 @@ function showInfo(){
 function goHome () {
   if (!panelTransition){
   
-  if (!infoToggle){
+    if (!infoToggle){
       $('.panel').each(function(i, div){ // loop through article headings
         if ($(div).attr("class") == currentSection.attr("class")){
           if (i < $('.panel').length -1){
@@ -213,7 +219,7 @@ function scrollToPrevious () {
     if (infoToggle){
       showInfo();
 
-      
+
 
     }else if (currentSection.hasClass("e3") && bReachedLastText){
       $(".e3 .second").animate({
