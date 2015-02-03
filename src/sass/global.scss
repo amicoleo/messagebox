@@ -298,7 +298,7 @@ nav {
   p.second {
     margin-top: 15% !important;
     @media screen and (max-width: $break-sm){
-      margin-top: 5% !important;
+      margin-top: 8% !important;
     }
     opacity: 0; 
   }
@@ -311,20 +311,20 @@ nav {
 
 .m-b {
   @extend .panel; 
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_b.jpg); 
+  background: url(../img/mb_b.jpg); 
    background-position: 50%;
   @include vendorize(background-size,cover);
 }
 
 .marlene {
   @extend .panel; 
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_e.jpg); 
+  background: url(../img/mb_e.jpg); 
    background-position: 50%;
   @include vendorize(background-size,cover);
 }
 
 .a {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_a.jpg); 
+  background: url(../img/mb_a.jpg); 
 }
 
 .b1 {
@@ -348,15 +348,15 @@ nav {
 }
 
 .c {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c.jpg); 
+  background: url(../img/mb_c.jpg); 
 }
 
 .c2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_c2.jpg); 
+  background: url(../img/mb_c2.jpg); 
 }
 
 .d {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/95495/mb_d.jpg); 
+  background: url(../img/mb_d.jpg); 
 }
 
 .a, .b1, .b2, .b3, .c, .c2, .d, .e1, .e2, .marlene, .mb{
